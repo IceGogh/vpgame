@@ -46,3 +46,29 @@
     充值
   </view>
 </view>
+
+<view class='line'></view>
+
+<view class='userList'>
+  <view class='earnings'>
+    <view>我的收益</view>
+  </view>
+  <view class='guessing'>
+    <view>我的竞猜</view>
+  </view>
+  <view class='recommend'>
+    <view>我的推荐</view>
+  </view>
+  <view class='property'>
+    <view>资产摘要</view>
+  </view>
+  <view class='message'>
+    <view>消息中心</view>
+  </view>
+
+  <view class='line'></view>
+
+  <view class='question'>
+    <view>常见问题</view>
+  </view>
+</view>
