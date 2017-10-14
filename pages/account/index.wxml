@@ -1,0 +1,48 @@
+<!-- 个人中心 title  -->
+<view class="common-header textCt color-f">
+  个人中心
+  <view class="signIn" data-signInOrNot>签到</view>
+</view>
+
+<!-- 用户头像/昵称/等级  -->
+<view class="images overfl">
+  <view class='imagesBg'></view>
+  <view class='imagesPhoto'>
+    <image src="../../static/image/userPhoto.jpg"></image>
+  </view>
+  <view class='userName textCt color-f'>
+    黑土
+  </view>
+  <view class='userLevel textCt color-f'>
+    初学乍道
+  </view>
+</view>
+
+<!-- 用户数据总览  -->
+<view class='userData'>
+  <view class='silver textCt'>
+    <text>2</text>
+    <view class="silverIn">账户碎银</view>
+  </view>
+  <view class='inventory textCt'>
+    <text>37</text>
+    <view class="inventoryIn">vip库存</view>
+  </view>
+  <view class='money textCt'>
+    <text>4</text>
+    <view class="moneyIn">赏金剩余</view>
+  </view>
+</view>
+
+<!-- 数据兑换、存取、充值  -->
+<view class='dataTransf'>
+  <view class='silTransf textCt'>
+    兑换
+  </view>
+  <view class='access textCt'>
+    存取
+  </view>
+  <view class='recharge textCt'>
+    充值
+  </view>
+</view>

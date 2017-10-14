@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/match/index",
+    "pages/account/myBag",
+    "pages/roll/index",
+    "pages/account/index"
+  ],
+  "window":{
+      "backgroundTextStyle": "light",
+      "navigationBarBackgroundColor": "black",
+      "navigationBarTitleText": "VipGame"
+  },
+  "tabBar" : {
+    "color" : "#888",
+    "selectedColor" : "#ee7142",
+    "backgroundColor" : "#fff",
+    "borderStyle" : "black",
+    "list" : [
+      { 
+        "pagePath" : "pages/match/index" ,
+        "iconPath" : "static/image/foot_detail.png",
+        "selectedIconPath" : "static/image/foot_detail_hover.png",
+        "text" : "竞猜"
+      },
+      {
+        "pagePath" : "pages/account/myBag",
+        "iconPath": "static/image/foot_detail.png",
+        "selectedIconPath": "static/image/foot_detail_hover.png",
+        "text" : "背包"
+      },
+      {
+        "pagePath" : "pages/roll/index",
+        "iconPath": "static/image/foot_detail.png",
+        "selectedIconPath": "static/image/foot_detail_hover.png",
+        "text" : "ROLL"
+      },
+      {
+        "pagePath" : "pages/account/index",
+        "iconPath": "static/image/foot_detail.png",
+        "selectedIconPath": "static/image/foot_detail_hover.png",
+        "text" : "个人"
+      }
+    ]
+  }
+}
