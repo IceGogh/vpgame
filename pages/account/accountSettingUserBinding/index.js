@@ -1,4 +1,4 @@
-// pages/accountSettingSetNature/index.js
+// pages/account/accountSettingUserBinding/index.js
 Page({
 
   /**
@@ -62,5 +62,10 @@ Page({
    */
   onShareAppMessage: function () {
   
-  }
+  },
+
+  // 页面后退
+  goBack: function (ops) {
+    wx.navigateBack();
+  },
 })

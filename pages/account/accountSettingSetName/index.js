@@ -1,12 +1,12 @@
-// pages/account/index.js
+// pages/accountSettingSetName/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
-  data: {  
+  data: {
+  
   },
-
 
   /**
    * 生命周期函数--监听页面加载
@@ -63,10 +63,9 @@ Page({
   onShareAppMessage: function () {
   
   },
-  // 跳转至 个人设置 accountSetting
-  JumpTo: function (ops) {
-    wx.navigateTo({
-      url: "accountSetting/index"
-    })
-  }
+
+  // 页面后退
+  goBack: function (ops) {
+    wx.navigateBack();
+  },
 })

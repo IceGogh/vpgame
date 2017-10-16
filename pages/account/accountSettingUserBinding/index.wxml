@@ -1,0 +1,29 @@
+<view class="wrap">
+  <view class="common-header textCt color-f">
+    <view class="backBtn" bindtap="goBack"></view>
+    <text>资料认证</text>
+  </view>
+  <view class='bg'></view>
+  <view class='bind'>
+    <view>
+      <text>手机绑定</text>
+      <view class="bindPh overfl">18798989898</view>
+    </view>
+    <view>
+      <text>邮箱绑定</text>
+      <view class='bindEmail overfl'>bindEmail@163.com</view>
+    </view>
+    <view>
+      <text>steam账号</text>
+      <view class="SteamAccout">76561198429174544</view>
+    </view>
+    <view>
+      <text>steam链接</text>
+      <view class="SteamUrl">已绑定</view>
+    </view>
+    <view>
+      <text>支付宝</text>
+      <view class="bindAlipay">已绑定</view>
+    </view>
+  </view>
+</view>

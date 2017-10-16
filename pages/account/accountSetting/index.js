@@ -71,9 +71,21 @@ Page({
   },
 
   // 页面跳转 至 修改昵称
-  JumpTo : function(ops){
+  JumpToName : function(ops){
     wx.navigateTo({
       url : "../accountSettingSetName/index"
     })
-  }
+  },
+
+  JumpToNature : function(){
+    wx.navigateTo({
+      url : "../accountSettingSetNature/index"
+    })
+  },
+
+  JumpToUserBind: function () {
+    wx.navigateTo({
+      url: "../accountSettingUserBinding/index"
+    })
+  },
 })

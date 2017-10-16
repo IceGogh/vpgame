@@ -12,11 +12,11 @@
       <text>我的头像</text>
       <image src='https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/171009/X00068F9.jpg'></image>
     </view>
-    <view class="infoItem myName" bindtap='JumpTo'>
+    <view class="infoItem myName" bindtap='JumpToName'>
       <text>我的昵称</text>
       <view class='name overfl'>黑土11</view>
     </view>
-    <view class='infoItem signature'>
+    <view class='infoItem signature' bindtap='JumpToNature'>
       <text>个性签名</text>
       <view class='nature overfl'>个性前面内容简短显示</view>
     </view>
@@ -24,7 +24,7 @@
     <!-- line  -->
     <view class='line'></view>
 
-    <view class='infoItem certificates'>
+    <view class='infoItem certificates' bindtap='JumpToUserBind'>
       资料认证
     </view>
     <view class='infoItem changePW'>

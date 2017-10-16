@@ -1,3 +1,7 @@
+.wrap {
+  height: 1122rpx;
+}
+
 .common-header {
   background: #222324;
 }
@@ -18,6 +22,8 @@
   font-size: 24rpx;
   padding-left: 32rpx;
   color: RGB(85,85,85);
+  background: #fff;
+  border-radius: 10rpx;
 }
 
 .limit {

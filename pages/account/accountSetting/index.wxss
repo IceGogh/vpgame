@@ -1,20 +1,9 @@
 .wrap {
-  background: #fbfbfb;
-  height: 1026rpx;
+  height: 1122rpx;
 }
 
 .common-header {
   background: #000;
-}
-
-.backBtn {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 107rpx;
-  height: 84rpx;
-  background: url(https://vip-account.oss-cn-hangzhou.aliyuncs.com/mobile/static/account/urs/image/go.png) no-repeat left center;
-  background-size: contain;
 }
 
 .info {
