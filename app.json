@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/account/earnings/index",
     "pages/match/index",
     "pages/account/myBag/index",
     "pages/roll/index",
@@ -7,7 +8,10 @@
     "pages/account/accountSetting/index",
     "pages/account/accountSettingSetName/index",
     "pages/account/accountSettingSetNature/index",
-    "pages/account/accountSettingUserBinding/index"
+    "pages/account/accountSettingUserBinding/index",
+    "pages/account/accountSettingChangePW/index",
+    "pages/account/userMoney/index",
+    "pages/account/userMoneyRecharge/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -21,7 +25,7 @@
     "borderStyle": "black",
     "list": [
       {
-        "pagePath": "pages/match/index",
+        "pagePath": "pages/account/earnings/index",
         "iconPath": "static/image/foot_detail.png",
         "selectedIconPath": "static/image/foot_detail_hover.png",
         "text": "竞猜",
@@ -29,20 +33,20 @@
       },
       {
         "pagePath": "pages/account/myBag/index",
-        "iconPath": "static/image/foot_detail.png",
-        "selectedIconPath": "static/image/foot_detail_hover.png",
+        "iconPath": "static/image/foot_bag.png",
+        "selectedIconPath": "static/image/foot_bag_hover.png",
         "text": "背包"
       },
       {
         "pagePath": "pages/roll/index",
-        "iconPath": "static/image/foot_detail.png",
-        "selectedIconPath": "static/image/foot_detail_hover.png",
+        "iconPath": "static/image/foot_start.png",
+        "selectedIconPath": "static/image/foot_start_hover.png",
         "text": "ROLL"
       },
       {
         "pagePath": "pages/account/index",
-        "iconPath": "static/image/foot_detail.png",
-        "selectedIconPath": "static/image/foot_detail_hover.png",
+        "iconPath": "static/image/foot_urs.png",
+        "selectedIconPath": "static/image/foot_urs_hover.png",
         "text": "个人"
       }
     ]

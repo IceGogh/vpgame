@@ -1,7 +1,3 @@
-.common-header {
-  background: #222324;
-}
-
 .bg {
   width: 100%;
   height: 245rpx;
@@ -21,8 +17,6 @@
 }
 
 .bind > view {
-  width: 94%;
-  margin: 0 auto;
   border-bottom: 0.7rpx solid #dfdfdf;
   background: url(https://vip-account.oss-cn-hangzhou.aliyuncs.com/mobile/static/account/global/images/li.jpg) no-repeat right center;
   background-size: contain;

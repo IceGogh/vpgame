@@ -1,4 +1,7 @@
 /**app.wxss**/
+page {
+  background: #fbfbfb;
+}
 .textCt { 
   text-align: center;
 }
@@ -27,11 +30,12 @@
   opacity : 0.5;
   font-size: 28rpx;
   z-index : 100;
+  background: #222324;
 }
 
-.wrap {
-  background: #fbfbfb;
-  height: 1026rpx;
+.width94 {
+  width: 94%;
+  margin: 0 auto;
 }
 
 .backBtn {

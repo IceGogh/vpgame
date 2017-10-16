@@ -1,5 +1,4 @@
-<view class="wrap">
-  
+
   <!-- header标题  -->
   <view class="common-header textCt color-f">
     <view class="backBtn" bindtap='goBack'></view>
@@ -8,15 +7,15 @@
 
   <!-- 资料部分  -->
   <view class='info'>
-    <view class="infoItem myPhoto">
+    <view class="infoItem width94 myPhoto">
       <text>我的头像</text>
       <image src='https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/171009/X00068F9.jpg'></image>
     </view>
-    <view class="infoItem myName" bindtap='JumpToName'>
+    <view class="infoItem width94 myName" bindtap='JumpToName'>
       <text>我的昵称</text>
       <view class='name overfl'>黑土11</view>
     </view>
-    <view class='infoItem signature' bindtap='JumpToNature'>
+    <view class='infoItem width94 signature' bindtap='JumpToNature'>
       <text>个性签名</text>
       <view class='nature overfl'>个性前面内容简短显示</view>
     </view>
@@ -24,10 +23,10 @@
     <!-- line  -->
     <view class='line'></view>
 
-    <view class='infoItem certificates' bindtap='JumpToUserBind'>
+    <view class='infoItem width94 certificates' bindtap='JumpToUserBind'>
       资料认证
     </view>
-    <view class='infoItem changePW'>
+    <view class='infoItem width94 changePW' bindtap='JumpToChangePW'>
       修改密码
     </view>
 
@@ -37,4 +36,3 @@
 
   <!-- 退出登录  -->
   <view class='signOut textCt'>退出登录</view>
-</view>

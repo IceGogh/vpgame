@@ -1,0 +1,14 @@
+
+  <view class="common-header textCt color-f">
+    <view class="backBtn" bindtap="goBack"></view>
+    <text>赏金充值</text>
+  </view>
+  <view class='coinBg'></view>
+  <view class='coinNumber textCt overfl'>123</view>
+  <view class='textCt'>赏金剩余</view>
+  <view class='width94 textCt color-f recharge' bindtap='rechargePage'>
+    赏金充值
+  </view>
+  <view class='width94 textCt color-f change' bindtap='ExchangeMonry'>
+    饰品兑换赏金
+  </view>

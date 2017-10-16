@@ -36,13 +36,13 @@
 
 <!-- 数据兑换、存取、充值  -->
 <view class='dataTransf'>
-  <view class='silTransf textCt'>
+  <view class='silTransf textCt' bindtap='showsilTransfBox'>
     兑换
   </view>
-  <view class='access textCt'>
+  <view class='access textCt' bindtap='JumpToMyBag'>
     存取
   </view>
-  <view class='recharge textCt'>
+  <view class='recharge textCt' bindtap="JumpToRecharge">
     充值
   </view>
 </view>
@@ -70,5 +70,21 @@
 
   <view class='question'>
     <view>常见问题</view>
+  </view>
+</view>
+
+<!-- 兑换浮动框  -->
+<view class='silTransfBox' hidden='{{silTransfBoxHidden}}'>
+  <view class='textCt'>
+    您本次最多可兑换
+    <text>1</text>
+    赏金
+  </view>
+  <input type='number' value='0' class='textCt'/>
+  <view class='minline'></view>
+  <view class='button'>
+    <view class='cancle textCt' bindtap='canclesliTransfBox'>取消</view>
+    <view></view>
+    <view class='exchange textCt'>兑换</view>
   </view>
 </view>

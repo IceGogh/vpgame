@@ -5,8 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {  
+    "silTransfBoxHidden" : true
   },
-
 
   /**
    * 生命周期函数--监听页面加载
@@ -68,5 +68,38 @@ Page({
     wx.navigateTo({
       url: "accountSetting/index"
     })
+  },
+
+  // 兑换框显示
+  showsilTransfBox : function(){
+    if(this.data.silTransfBoxHidden){
+      this.setData({
+        "silTransfBoxHidden" : false
+      })
+    }
+  },
+
+  // 取消兑换狂
+  canclesliTransfBox : function(){
+    if (!this.data.silTransfBoxHidden){
+      this.setData({
+        "silTransfBoxHidden": true
+      })
+    }
+  },
+
+  // 存取 (跳转至背包)
+  JumpToMyBag: function() {
+    wx.switchTab({
+      url: "myBag/index"
+    })
+  },
+
+  // 充值
+  JumpToRecharge : function(){
+    wx.navigateTo({
+      url : "userMoney/index"
+    })
   }
+  
 })

@@ -1,4 +1,4 @@
-// pages/account/myBag.js
+// pages/account/accountSettingChangePW/index.js
 Page({
 
   /**
@@ -62,5 +62,12 @@ Page({
    */
   onShareAppMessage: function () {
   
-  }
+  },
+  // 页面后退
+
+  goBack: function (ops) {
+    wx.navigateBack();
+  },
+
+  
 })

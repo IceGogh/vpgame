@@ -1,11 +1,12 @@
-<view class="common-header textCt color-f">
-  <view class="backBtn" bindtap="goBack"></view>
-  <text>修改个性签名</text>
-</view>
-<view class='nature'>
-  <textarea placeholder='请输入您的个性签名'></textarea>
-</view>
-<view class='limit'>
-  <text>0</text>/<text>100</text>
-</view>
-<view class='confirm textCt color-f'>确定</view>
+
+  <view class="common-header textCt color-f">
+    <view class="backBtn" bindtap="goBack"></view>
+    <text>修改个性签名</text>
+  </view>
+  <view class='nature width94'>
+    <textarea placeholder='请输入您的个性签名'></textarea>
+  </view>
+  <view class='limit width94'>
+    <text>0</text>/<text>100</text>
+  </view>
+  <view class='confirm width94 textCt color-f'>确定</view>

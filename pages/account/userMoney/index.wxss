@@ -1,0 +1,35 @@
+.coinBg {
+  width: 100%;
+  background: url(https://vip-account.oss-cn-hangzhou.aliyuncs.com/mobile/static/account/urs/image/money.png) no-repeat center center;
+  background-size: contain;
+  height: 156.8rpx;
+  margin-top: 188rpx;
+}
+
+.coinNumber {
+  height: 88rpx;
+  line-height: 88rpx;
+  width: 100%;
+  color: #e9bc38;
+  font-size: 80rpx;
+}
+
+.coinNumber + view{
+  color: #e9bc38;
+  height: 46rpx;
+  line-height: 46rpx;
+  font-size: 26rpx;
+}
+
+.recharge, .change {
+  margin-top: 20rpx;
+  background: #e9bc38;
+  border-radius: 11.2rpx;
+  height: 98rpx;
+  line-height: 98rpx;
+  font-size: 33.6rpx;
+}
+
+page view:last-child{
+  background: #999;
+}

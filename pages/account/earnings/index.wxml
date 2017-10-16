@@ -1,0 +1,24 @@
+  <view class="common-header textCt color-f">
+    <view class="backBtn" bindtap="goBack"></view>
+    <text>我的收益</text>
+  </view>
+  <view class='Bg'>
+    <view class='userData'>
+      <view>
+        <view>3271231</view>
+        <view>碎银总收益</view>
+      </view>
+      <view>
+        <view>$-112</view>
+        <view>饰品总收益</view>
+      </view>
+      <view>
+        <view>25</view>
+        <view>赏金总收益</view>
+      </view>
+    </view>
+    <view class='weekOrTotal'>
+      <view class='week {{selStatus == 1 ? "hoverweekOrTotal" : " "}}' bindtap='changeSelStatus1'>周</view>
+      <view class='total {{selStatus == 0 ? "hoverweekOrTotal" : " "}}' bindtap='changeSelStatus0'>总</view>
+    </view>
+  </view>

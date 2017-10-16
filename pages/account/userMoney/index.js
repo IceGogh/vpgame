@@ -1,4 +1,4 @@
-// pages/accountSetting/index.js
+// pages/account/userMoney/index.js
 Page({
 
   /**
@@ -63,37 +63,22 @@ Page({
   onShareAppMessage: function () {
   
   },
-
   // 页面后退
-
-  goBack : function(ops){
+  goBack: function (ops) {
     wx.navigateBack();
   },
-
-  // 页面跳转 至 修改昵称
-  JumpToName : function(ops){
+  
+  // 赏金充值
+  rechargePage : function(){
     wx.navigateTo({
-      url : "../accountSettingSetName/index"
+      url: '../userMoneyRecharge/index',
     })
   },
 
-  JumpToNature : function(){
-    wx.navigateTo({
-      url : "../accountSettingSetNature/index"
+  // 饰品兑换赏金
+  ExchangeMonry : function(){
+    wx.switchTab({
+      url: '../myBag/index',
     })
-  },
-
-  JumpToUserBind: function () {
-    wx.navigateTo({
-      url: "../accountSettingUserBinding/index"
-    })
-  },
-
-  JumpToChangePW: function () {
-    wx.navigateTo({
-      url: "../accountSettingChangePW/index"
-    })
-  },
-
-
+  }
 })

@@ -1,4 +1,4 @@
-// pages/accountSetting/index.js
+// pages/account/userMoneyRecharge/index.js
 Page({
 
   /**
@@ -65,35 +65,8 @@ Page({
   },
 
   // 页面后退
-
-  goBack : function(ops){
+  goBack: function (ops) {
     wx.navigateBack();
   },
-
-  // 页面跳转 至 修改昵称
-  JumpToName : function(ops){
-    wx.navigateTo({
-      url : "../accountSettingSetName/index"
-    })
-  },
-
-  JumpToNature : function(){
-    wx.navigateTo({
-      url : "../accountSettingSetNature/index"
-    })
-  },
-
-  JumpToUserBind: function () {
-    wx.navigateTo({
-      url: "../accountSettingUserBinding/index"
-    })
-  },
-
-  JumpToChangePW: function () {
-    wx.navigateTo({
-      url: "../accountSettingChangePW/index"
-    })
-  },
-
 
 })

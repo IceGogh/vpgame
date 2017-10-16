@@ -1,0 +1,54 @@
+.Number{
+  border: 1.4rpx solid #a0a0a0;
+  border-radius: 11rpx;
+  height: 116rpx;
+  position: relative;
+  margin: 154rpx auto 10rpx;
+  font-size: 26rpx;
+  width: 96%;
+}
+
+.Number text {
+  color: #555;
+  height: 116rpx;
+  line-height: 116rpx;
+  padding-left: 16rpx;
+}
+
+.Number input {
+  height: 116rpx;
+  line-height: 116rpx;
+  width: 80%;
+  position: absolute;
+  top: 0;
+  left: 18%;
+}
+
+.selectNub {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  height: 300rpx;
+}
+
+.selectNub view {
+  width: 205rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 25rpx;
+  border-radius: 11rpx;
+  border: 1.4rpx solid #e9bc38;
+  color: #e9bc38;
+  text-align: center;
+}
+
+.next {
+  background: #e9bc38;
+  height: 98rpx;
+  line-height: 98rpx;
+  font-size: 33.6rpx;
+  border-radius: 11rpx;
+  margin-top: 10rpx;
+}

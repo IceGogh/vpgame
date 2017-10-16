@@ -1,13 +1,28 @@
-// pages/accountSetting/index.js
+// pages/account/earnings/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    "selStatus" : 1
   },
 
+  //  我的收益 - 周/总 数据统计切换
+  changeSelStatus1 : function(){
+    if (this.data.selStatus != 1){
+      this.setData({
+        "selStatus" : 1
+      })
+    }
+  },
+  changeSelStatus0: function () {
+    if (this.data.selStatus != 0) {
+      this.setData({
+        "selStatus": 0
+      })
+    }
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -62,38 +77,5 @@ Page({
    */
   onShareAppMessage: function () {
   
-  },
-
-  // 页面后退
-
-  goBack : function(ops){
-    wx.navigateBack();
-  },
-
-  // 页面跳转 至 修改昵称
-  JumpToName : function(ops){
-    wx.navigateTo({
-      url : "../accountSettingSetName/index"
-    })
-  },
-
-  JumpToNature : function(){
-    wx.navigateTo({
-      url : "../accountSettingSetNature/index"
-    })
-  },
-
-  JumpToUserBind: function () {
-    wx.navigateTo({
-      url: "../accountSettingUserBinding/index"
-    })
-  },
-
-  JumpToChangePW: function () {
-    wx.navigateTo({
-      url: "../accountSettingChangePW/index"
-    })
-  },
-
-
+  }
 })

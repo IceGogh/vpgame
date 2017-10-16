@@ -1,7 +1,3 @@
-.wrap {
-  height: 1122rpx;
-}
-
 .common-header {
   background: #000;
 }
@@ -14,8 +10,6 @@
 .infoItem {
   height: 105rpx;
   line-height: 105rpx;
-  width: 94%;
-  margin: 0 auto;
   color: #888;
   font-size: 25rpx;
   border-bottom: 0.7rpx solid #dfdfdf;

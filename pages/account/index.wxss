@@ -200,3 +200,71 @@
     background-image: url(https://vip-account.oss-cn-hangzhou.aliyuncs.com/mobile/static/account/index/images/urs_ic9.png);
   width: 100%;
 }
+
+.silTransfBox {
+  width: 490rpx;
+  height: 224rpx;
+  position: fixed;
+  background: #fff;
+  border-radius: 21rpx;
+  box-shadow: 0 0 8rpx 2rpx #bbb; 
+  top: 530rpx;
+  left: 130rpx;
+  z-index: 1000;
+  
+}
+
+.silTransfBox > view:nth-child(1){
+  width: 100%;
+  height: 64rpx;
+  line-height: 64rpx;
+  margin-top: 18rpx;
+  font-size: 28rpx;
+}
+
+.silTransfBox > view:nth-child(1) text {
+  color: #e24e26;
+  margin: 0 5rpx;
+}
+
+.silTransfBox > input {
+  width: 334rpx;
+  margin: 0 auto;
+  background: #ededed;
+  font-size: 28rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+
+.minline {
+  width: 100%;
+  background: #eee;
+  height: 0.7rpx;
+  margin-top: 16rpx;
+}
+
+.button {
+  width: 100%;
+  font-size: 28rpx;
+  height: 74rpx;
+  line-height: 74rpx;
+}
+
+.button > view {
+  float: left;
+}
+.button > view:nth-child(2){
+  height: 60rpx;
+  margin-top: 7rpx;
+  width: 0.8rpx;
+  background: #eee;
+}
+.cancle {
+  width: 244.6rpx;
+  color: #999;
+}
+
+.exchange {
+  width: 244.6rpx;
+  color: #e24e26;
+}

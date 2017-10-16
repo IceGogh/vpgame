@@ -1,0 +1,22 @@
+
+  <view class="common-header textCt color-f">
+    <view class="backBtn" bindtap="goBack"></view>
+    <text>修改密码</text>
+  </view>
+  <view class='keyBox'>
+    <view class='phone width94'>
+      <input type='text' placeholder='请输入您的手机号' maxlength='11'/>
+    </view>
+    <view class='code width94'>
+      <input type='text' placeholder='请输入您的验证码' maxlength='6'/>
+      <view class='getCode'>获取验证码</view>
+    </view>
+    <view class='psword width94'>
+      <input type='password' placeholder='请输入新密码' maxlength='16'/>
+    </view>
+    <view class='pswrod2 width94'>
+      <input type='password' placeholder='再次输入新密码' maxlength='16'/>
+    </view>
+  </view>
+  
+  <view class='confirm width94 textCt color-f'>确定</view>
