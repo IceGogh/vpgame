@@ -1,9 +1,12 @@
 {
   "pages":[
+    "pages/accountSettingSetNature/index",
     "pages/match/index",
     "pages/account/myBag",
     "pages/roll/index",
-    "pages/account/index"
+    "pages/account/index",
+    "pages/accountSetting/index",
+    "pages/accountSettingSetName/index"
   ],
   "window":{
       "backgroundTextStyle": "light",
@@ -17,10 +20,11 @@
     "borderStyle" : "black",
     "list" : [
       { 
-        "pagePath" : "pages/match/index" ,
+        "pagePath" : "pages/accountSettingSetNature/index" ,
         "iconPath" : "static/image/foot_detail.png",
         "selectedIconPath" : "static/image/foot_detail_hover.png",
-        "text" : "竞猜"
+        "text" : "竞猜",
+        "backgroundColor" : "green"
       },
       {
         "pagePath" : "pages/account/myBag",

@@ -1,0 +1,40 @@
+<view class="wrap">
+  
+  <!-- header标题  -->
+  <view class="common-header textCt color-f">
+    <view class="backBtn" bindtap='goBack'></view>
+    <text>个人设置</text>
+  </view>
+
+  <!-- 资料部分  -->
+  <view class='info'>
+    <view class="infoItem myPhoto">
+      <text>我的头像</text>
+      <image src='https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/171009/X00068F9.jpg'></image>
+    </view>
+    <view class="infoItem myName" bindtap='JumpTo'>
+      <text>我的昵称</text>
+      <view class='name overfl'>黑土11</view>
+    </view>
+    <view class='infoItem signature'>
+      <text>个性签名</text>
+      <view class='nature overfl'>个性前面内容简短显示</view>
+    </view>
+    
+    <!-- line  -->
+    <view class='line'></view>
+
+    <view class='infoItem certificates'>
+      资料认证
+    </view>
+    <view class='infoItem changePW'>
+      修改密码
+    </view>
+
+    <!-- line  -->
+    <view class='line'></view>  
+  </view>
+
+  <!-- 退出登录  -->
+  <view class='signOut textCt'>退出登录</view>
+</view>

@@ -1,0 +1,41 @@
+.common-header {
+  background: #222324;
+}
+
+.name {
+  margin-top: 133rpx;
+  width: 94%;
+  margin-left: 3%;
+  height: 112rpx;
+  border: 1.4rpx solid rgb(153,153,153);
+  border-radius: 10rpx;
+}
+
+.name input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 24rpx;
+  padding-left: 32rpx;
+  color: RGB(85,85,85);
+}
+
+.limit {
+  width: 94%;
+  height: 50rpx;
+  margin: 0 auto;
+  line-height: 50rpx;
+  color: rgb(85,85,85);
+  text-align: right;
+  font-size: 22rpx;
+}
+
+.confirm {
+  background: #e24f26;
+  height: 100rpx;
+  width: 94%;
+  margin: 0 auto;
+  line-height: 100rpx;
+  border-radius: 10.5rpx;
+  font-size: 33.6rpx;
+}

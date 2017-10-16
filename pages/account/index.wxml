@@ -7,8 +7,8 @@
 <!-- 用户头像/昵称/等级  -->
 <view class="images overfl">
   <view class='imagesBg'></view>
-  <view class='imagesPhoto'>
-    <image src="../../static/image/userPhoto.jpg"></image>
+  <view class='imagesPhoto' bindtap="JumpTo">
+    <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/171009/X00068F9.jpg"></image>
   </view>
   <view class='userName textCt color-f'>
     黑土
@@ -21,15 +21,15 @@
 <!-- 用户数据总览  -->
 <view class='userData'>
   <view class='silver textCt'>
-    <text>2</text>
+    <text>23545</text>
     <view class="silverIn">账户碎银</view>
   </view>
   <view class='inventory textCt'>
-    <text>37</text>
+    <text>3125147</text>
     <view class="inventoryIn">vip库存</view>
   </view>
   <view class='money textCt'>
-    <text>4</text>
+    <text>41212155</text>
     <view class="moneyIn">赏金剩余</view>
   </view>
 </view>

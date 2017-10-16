@@ -24,7 +24,6 @@
   position: fixed;
   top: 0;
   left: 0;
-  background: green;
   opacity : 0.5;
   font-size: 28rpx;
   z-index : 100;

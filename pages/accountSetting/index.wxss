@@ -1,0 +1,84 @@
+.wrap {
+  background: #fbfbfb;
+  height: 1026rpx;
+}
+
+.common-header {
+  background: #000;
+}
+
+.backBtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 107rpx;
+  height: 84rpx;
+  background: url(https://vip-account.oss-cn-hangzhou.aliyuncs.com/mobile/static/account/urs/image/go.png) no-repeat left center;
+  background-size: contain;
+}
+
+.info {
+  margin-top: 84rpx;
+  width: 100%;
+}
+
+.infoItem {
+  height: 105rpx;
+  line-height: 105rpx;
+  width: 94%;
+  margin: 0 auto;
+  color: #888;
+  font-size: 25rpx;
+  border-bottom: 0.7rpx solid #dfdfdf;
+  position: relative;
+  background: url(https://vip-account.oss-cn-hangzhou.aliyuncs.com/mobile/static/account/urs/image/li.png) no-repeat right center;
+  background-size: contain;
+}
+
+.info .myPhoto {
+  height: 140rpx;
+  line-height: 140rpx;
+  position: relative;
+  background-image: none;
+}
+
+ .myPhoto image {
+  position: absolute;
+  top: 20rpx;
+  right: 0;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+} 
+
+.name, .nature {
+  position: absolute;
+  top: 0;
+  right: 35rpx;
+  height: 100%;
+  max-width: 55%;
+  text-align: right;
+  font-size: 28rpx;
+  color: #555;
+  text-overflow:ellipsis;
+}
+
+.line {
+  width: 100%;
+  height: 14rpx;
+  background: #eaeaea;
+}
+
+.signature, .changePW {
+  border-bottom: none;
+}
+
+.signOut {
+  width: 100%;
+  height: 112rpx;
+  line-height: 112rpx;
+  color: #ee7142;
+  background: #fff;
+  box-shadow: 0 7rpx 7rpx rgba(0,0,0,0.3);
+  font-size: 28rpx;
+}
