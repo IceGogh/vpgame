@@ -22,3 +22,18 @@
       <view class='total {{selStatus == 0 ? "hoverweekOrTotal" : " "}}' bindtap='changeSelStatus0'>总</view>
     </view>
   </view>
+  
+  <view class='width94'>
+    <text class='matchTitle'>竞猜</text>
+    <view class='myMatch'>我的竞猜</view>
+  </view>
+
+  <!-- 滑动板块  -->
+  <swiper>
+    <swiper-item>
+      <canvas canvas-id='weekCanvas'></canvas>
+    </swiper-item>
+    <swiper-item>
+      <canvas canvas-id='totalCanvas'></canvas>
+    </swiper-item>
+  </swiper>

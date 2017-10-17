@@ -1,3 +1,6 @@
+page {
+  background: #fff;
+}
 .common-header {
   background: transparent;
 }
@@ -77,4 +80,48 @@
 .weekOrTotal .hoverweekOrTotal {
   border-bottom: 1.8rpx solid #fff;
   color: #fff;
+}
+
+.Bg + view {
+  height: 110rpx;
+  background: url(https://vip-account.oss-cn-hangzhou.aliyuncs.com/mobile/static/global/images/li.png) no-repeat right center;
+  background-size: contain;
+  border-bottom: 2.8rpx solid #eee;
+  line-height: 110rpx;
+  font-size: 28rpx;
+  color: #717481;
+}
+
+.matchTitle {
+  height: 35rpx;
+  line-height: 35rpx;
+  border-left: 7rpx solid #a7aec0;
+  float: left;
+  margin-top: 40rpx;
+  padding-left: 18rpx;
+}
+
+.myMatch {
+  height: 110rpx;
+  line-height: 110rpx;
+  float: right;
+  padding-right: 48rpx;
+}
+
+swiper {
+  height: 540rpx;
+}
+
+swiper-item {
+  height: 540rpx;
+  width: 750rpx;
+  position: relative;
+}
+
+canvas {
+  width: 216rpx;
+  height: 216rpx;
+  position: absolute;
+  top: 42rpx;
+  left: 271rpx;
 }
