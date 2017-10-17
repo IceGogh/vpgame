@@ -118,10 +118,105 @@ swiper-item {
   position: relative;
 }
 
-canvas {
-  width: 216rpx;
-  height: 216rpx;
+.Rate {
+  box-sizing: border-box;
+  width: 220rpx;
+  height: 220rpx;
   position: absolute;
+  background: transparent;
   top: 42rpx;
   left: 271rpx;
+}
+
+.Rate > view {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.Rate > view:nth-of-type(1) {
+  position: relative;
+  top: 8rpx;
+  left: 8rpx;
+  width: 206rpx;
+  height: 206rpx;
+  background: #fff;  
+  border-radius: 50%;
+  z-index: 200;
+}
+
+.Rate > view:nth-of-type(2) {
+  width: 110rpx;
+  height: 220rpx;
+  background: #fff; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 220rpx 0 0 220rpx; 
+  border: 14rpx #eee solid;
+  z-index: 150;
+}
+
+.Rate >  view:nth-of-type(3) {
+  width: 110rpx;
+  height: 220rpx;
+  background: #fff; 
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  border-radius: 0  220rpx 220rpx 0; 
+  border: 14rpx #eee solid;
+}
+
+.Rate > view:nth-of-type(4) {
+  width: 220rpx;
+  height: 220rpx;
+  border-radius: 50%;
+  background: transparent;
+  border: 14rpx #ee7142 solid;
+  position: absolute;
+  top: 0;
+  left: 0;
+  clip: rect(0, 110rpx, 220rpx, 0);
+  z-index : 120;
+}
+
+.Rate > view:nth-of-type(5) {
+  width: 220rpx;
+  height: 220rpx;
+  border-radius: 50%;
+  background: transparent;
+  border: 14rpx #ee7142 solid;
+  position: absolute;
+  top: 0;
+  right: 0;
+  clip: rect(0, 220rpx, 220rpx, 110rpx);
+  z-index : 80;
+}
+
+.Rate view.RzIndex, .Rate view.RzIndex2{
+  z-index: 160 !important;
+}
+
+.Rate .winRate {
+  width: 100%;
+  line-height: 76rpx;
+  height: 76rpx;
+  padding-top: 30rpx;
+  font-family: 'Microsoft Yahei';
+  font-size: 44rpx;
+  color: #ee7142;
+}
+
+.winRate text {
+  font-size: 24rpx;
+  margin-left: -10rpx;
+}
+
+.winRate + view {
+  width: 100%;
+  line-height: 50rpx;
+  height: 50rpx;
+  font-size: 24rpx;
+  color: #a7aec0;
 }

@@ -5,7 +5,18 @@ Page({
    * 页面的初始数据
    */
   data: {
-    "selStatus" : 1
+    "selStatus" : 0,
+    "weekpercent" : '70',
+    "totalpercent": '30',
+    "rollDeg" : 225,
+    "rollDeg2": 50,
+    "rollTime" : 1000,
+    "weekRateRotateL" : '',
+    "weekRateRotateR" : '',
+    "totalRateRotateL": '',
+    "totalRateRotateR" : '',
+    "RzIndex" : 80,
+    "RzIndex2": 80,
   },
 
   //  我的收益 - 周/总 数据统计切换
@@ -13,7 +24,7 @@ Page({
     if (this.data.selStatus != 1){
       this.setData({
         "selStatus" : 1
-      })
+      });
     }
   },
   changeSelStatus0: function () {
@@ -27,56 +38,120 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    //  canvas 绘制画布
-    var cvs1 = wx.createCanvasContext('weekCanvas');
-        // cvs2 = wx.createCanvasContext('totalCanvas');
-    
-    // 设置线条颜色
-    cvs1.setStrokeStyle("#eeeeee");
+    //  周数据统计
+    this.weekRateRotateL = wx.createAnimation({
+      transformOrigin: "50% 50%",
+      duration: this.data.rollTime,
+      timingFunction: 'linear',
+    });
 
-    // 原点位置 canvas的边长/2  54像素单位 = 108rpx
-    cvs1.translate(54, 54);
+    this.weekRateRotateR = wx.createAnimation({
+      transformOrigin: "50% 50%",
+      duration: this.data.rollTime * (this.data.rollDeg - 180) / 180,
+      timingFunction: 'linear',
+    });
 
-    // 线条宽度 
-    cvs1.setLineWidth(3);
+    //  总数据统计
+    this.totalRateRotateL = wx.createAnimation({
+      transformOrigin: "50% 50%",
+      duration: this.data.rollTime,
+      timingFunction: 'linear',
+    });
 
-    // 第一遍圆圈
-    cvs1.beginPath();
+    this.totalRateRotateR = wx.createAnimation({
+      transformOrigin: "50% 50%",
+      duration: this.data.rollTime * (this.data.rollDeg2 - 180) / 180,
+      timingFunction: 'linear',
+    });
 
-    // arc(x, y, 半径， 开始位置， 结束位置， false默认顺时针运动)
-    cvs1.arc(0, 0, 52, 0, 2* Math.PI, false);
-    cvs1.closePath();
-    // 描绘出点的路径
-    cvs1.stroke();
+    this.rotateL(this.data.rollDeg);
+    this.rotateL2(this.data.rollDeg2)
 
-    // 百分比呈现 绘制第二层(百分比)圆
-    cvs1.setStrokeStyle("#ee7142");
-    cvs1.rotate(Math.PI/-2);  // 旋转回开始位置为12点
-    cvs1.setLineWidth(3);
-    
-    cvs1.beginPath();
-    // 50% 半圆
-    cvs1.arc(0, 0, 52, 0,  Math.PI, false);
-    cvs1.stroke();
-    cvs1.closePath();   // 首尾不相连(封闭画法) 先 stroke 后 closePath
-    cvs1.draw();
-    
   },
 
+  // 滑动时 双向绑定 根据 current值 改变 selStatus值 (周数据/总数据)
+  swiperData : function(e){
+    var val = e.detail.current;
+    this.setData({
+      selStatus : val
+    });
+  },
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
-  
+  onShow: function (){
+    
   },
 
+  //  周数据 左半圆 
+  rotateL: function (deg) {
+    if (deg > 180) {
+      this.weekRateRotateL.rotate(180).step();
+      this.setData({
+        weekRateRotateL: this.weekRateRotateL.export()
+      });
+      var _this = this;
+      var tm = this.data.rollTime
+      setTimeout(function () {
+        _this.setData({
+          RzIndex: 160
+        });
+        _this.rotateR(deg - 180)
+      }, tm)
+    } else {
+      this.weekRateRotateL.rotate(deg).step();
+      this.setData({
+        weekRateRotateL: this.weekRateRotateL.export()
+      });
+    }
+  },
+
+  //  周数据  右半圆
+  rotateR: function (deg) {
+    this.weekRateRotateR.rotate(deg).step();
+    this.setData({
+      weekRateRotateR: this.weekRateRotateR.export()
+    })
+  },
+
+
+  //  总数据  左半圆
+  rotateL2: function (deg) {
+    if (deg > 180) {
+      this.totalRateRotateL.rotate(180).step();
+      this.setData({
+        totalRateRotateL: this.totalRateRotateL.export()
+      });
+      var _this = this;
+      var tm = this.data.rollTime
+      setTimeout(function () {
+        _this.setData({
+          RzIndex2: 160
+        });
+        _this.rotateR2(deg - 180)
+      }, tm)
+    } else {
+      this.totalRateRotateL.rotate(deg).step();
+      this.setData({
+        totalRateRotateL: this.totalRateRotateL.export()
+      });
+    }
+  },
+
+  // 总数据  右半圆
+  rotateR2: function (deg) {
+    this.totalRateRotateR.rotate(deg).step();
+    this.setData({
+      totalRateRotateR: this.totalRateRotateR.export()
+    })
+  },
   /**
    * 生命周期函数--监听页面隐藏
    */

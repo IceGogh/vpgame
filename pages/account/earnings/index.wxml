@@ -18,8 +18,8 @@
       </view>
     </view>
     <view class='weekOrTotal'>
-      <view class='week {{selStatus == 1 ? "hoverweekOrTotal" : " "}}' bindtap='changeSelStatus1'>周</view>
-      <view class='total {{selStatus == 0 ? "hoverweekOrTotal" : " "}}' bindtap='changeSelStatus0'>总</view>
+      <view class='week {{selStatus == 0 ? "hoverweekOrTotal" : " "}}' bindtap='changeSelStatus0'>周</view>
+      <view class='total {{selStatus == 1 ? "hoverweekOrTotal" : " "}}' bindtap='changeSelStatus1'>总</view>
     </view>
   </view>
   
@@ -29,11 +29,35 @@
   </view>
 
   <!-- 滑动板块  -->
-  <swiper>
+  <swiper current='{{selStatus}}' bindchange="swiperData">
     <swiper-item>
-      <canvas canvas-id='weekCanvas'></canvas>
+      <view class='Rate'>
+        <view class='weekRateC'>
+          <view class='winRate'>
+            {{weekpercent}}
+            <text>%</text>
+          </view>
+          <view>周竞猜胜率</view>
+        </view>
+        <view class='weekRateL'></view>
+        <view class='weekRateR'></view>
+        <view class='arcL' animation="{{weekRateRotateL}}" ></view>
+        <view class='arcR {{ RzIndex == 80 ? " " : "RzIndex"}}' animation="{{weekRateRotateR}}" ></view>
+      </view>
     </swiper-item>
     <swiper-item>
-      <canvas canvas-id='totalCanvas'></canvas>
+      <view class='Rate'>
+        <view class='totalRateC'>
+          <view class='winRate'>
+            {{totalpercent}}
+            <text>%</text>
+          </view>
+          <view>总竞猜胜率</view>
+        </view>
+        <view class='totalRateL'></view>
+        <view class='totalRateR'></view>
+        <view class='arcL' animation="{{totalRateRotateL}}" ></view>
+        <view class='arcR {{ RzIndex2 == 80 ? " " : "RzIndex2"}}' animation="{{totalRateRotateR}}" ></view>
+      </view>
     </swiper-item>
   </swiper>
