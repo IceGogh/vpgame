@@ -2,4 +2,57 @@
     <view class="backBtn" bindtap="goBack"></view>
     <text>我的竞猜</text>
   </view>
-  <view class='Bg'></view>
+  <view class='Bg'>
+    <view class='BgTitle width94'>
+      <view>竞猜反水</view>
+      <view>28</view>
+      <view>+0</view>
+      <view>(周)</view>
+    </view>
+    <view class='BgData width94'>
+      <view class='BgDataLeft'>
+        <view class='borBtm borRt'>
+          <text>6</text>
+          <view>周竞猜量</view>
+        </view>
+        <view class='borBtm'>
+          <text>1</text>
+          <view>周收益</view>
+        </view>
+        <view class='borRt'>
+          <text>1024</text>
+          <view>总竞猜量</view>
+        </view>
+        <view>
+          <text>764</text>
+          <view>总收益</view>
+        </view>
+      </view>
+      <view class='BgDataRight textCt'>
+        <view class='title width94'>
+          <view class='{{weekOrTotalData == 1 ? "sel" : ""}}' bindtap='selWeekData'>
+            周
+          </view>
+          <view class='{{weekOrTotalData == 0 ? "sel" : ""}}' bindtap='selTotalData'>
+            总
+          </view>
+        </view>
+        <view class='cvs' bindtap='switchRate'>
+          <view class='cvsBox' hidden="{{weekOrTotalData == 0 ? true : false}}">
+            <view class='dataRate'>
+              <view>{{weekRate}}%</view>
+              <view>胜利率</view>
+            </view>
+            <canvas canvas-id='weekCvs'></canvas>
+          </view>
+          <view class='cvsBox' hidden="{{weekOrTotalData == 1 ? true : false}}">
+            <view class='dataRate'>
+              <view>{{totalRate}}%</view>
+              <view>胜利率</view>
+            </view>
+            <canvas canvas-id='totalCvs'></canvas>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
