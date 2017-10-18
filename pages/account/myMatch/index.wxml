@@ -1,0 +1,5 @@
+  <view class="common-header textCt color-f">
+    <view class="backBtn" bindtap="goBack"></view>
+    <text>我的竞猜</text>
+  </view>
+  <view class='Bg'></view>

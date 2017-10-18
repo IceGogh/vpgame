@@ -44,6 +44,32 @@
         <view class='arcL' animation="{{weekRateRotateL}}" ></view>
         <view class='arcR {{ RzIndex == 80 ? " " : "RzIndex"}}' animation="{{weekRateRotateR}}" ></view>
       </view>
+      <view class="RateTitle width94">
+        <view class="borBtm">
+          <view>0</view>
+          <text>竞猜反水</text>
+        </view>
+        <view class="borBtm sideLine">
+          <view>0</view>
+          <text>竞猜赏金收益</text>
+        </view>
+        <view class="borBtm">
+          <view>0</view>
+          <text>竞猜饰品收益</text>
+        </view>
+        <view>
+          <view>0</view>
+          <text>周竞猜次数</text>
+        </view>
+        <view class='sideLine'>
+          <view>0</view>
+          <text>当前连胜</text>
+        </view>
+        <view>
+          <view>0赏金</view>
+          <text>当前连胜奖励</text>
+        </view>
+      </view>
     </swiper-item>
     <swiper-item>
       <view class='Rate'>
@@ -59,5 +85,47 @@
         <view class='arcL' animation="{{totalRateRotateL}}" ></view>
         <view class='arcR {{ RzIndex2 == 80 ? " " : "RzIndex2"}}' animation="{{totalRateRotateR}}" ></view>
       </view>
+      <view class="RateTitle width94">
+        <view class="borBtm">
+          <view>0</view>
+          <text>竞猜反水</text>
+        </view>
+        <view class="borBtm sideLine">
+          <view>$-1</view>
+          <text>竞猜赏金收益</text>
+        </view>
+        <view class="borBtm">
+          <view>6</view>
+          <text>竞猜饰品收益</text>
+        </view>
+        <view>
+          <view>9</view>
+          <text>总竞猜次数</text>
+        </view>
+        <view class='sideLine'>
+          <view>0</view>
+          <text>当前连胜</text>
+        </view>
+        <view>
+          <view>0赏金</view>
+          <text>当前连胜奖励</text>
+        </view>
+      </view>
     </swiper-item>
   </swiper>
+
+  <!--   -->
+  <view class='bottomItem'>
+    <view>
+      <text>娱乐活动</text>
+      <view>￥0 | $0</view>
+    </view>
+    <view>
+      <text>ROLL</text>
+      <view>$0</view>
+    </view>
+    <view>
+      <text>推荐奖励</text>
+      <view>0</view>
+    </view>
+  </view>

@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/account/earnings/index",
+    "pages/account/myMatch/index",
     "pages/match/index",
     "pages/account/myBag/index",
     "pages/roll/index",
@@ -11,7 +11,8 @@
     "pages/account/accountSettingUserBinding/index",
     "pages/account/accountSettingChangePW/index",
     "pages/account/userMoney/index",
-    "pages/account/userMoneyRecharge/index"
+    "pages/account/userMoneyRecharge/index",
+    "pages/account/myEarnings/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -25,7 +26,7 @@
     "borderStyle": "black",
     "list": [
       {
-        "pagePath": "pages/account/earnings/index",
+        "pagePath": "pages/account/myMatch/index",
         "iconPath": "static/image/foot_detail.png",
         "selectedIconPath": "static/image/foot_detail_hover.png",
         "text": "竞猜",

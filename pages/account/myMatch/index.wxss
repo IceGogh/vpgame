@@ -1,0 +1,6 @@
+.Bg {
+  background: url(https://match.steampp.com/mobile/static/user/images/header_bj.jpg) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 400rpx;
+}

@@ -159,6 +159,12 @@ Page({
   
   },
 
+  // 页面后退
+  goBack: function (ops) {
+    wx.navigateBack();
+  },
+
+
   /**
    * 生命周期函数--监听页面卸载
    */

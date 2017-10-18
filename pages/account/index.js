@@ -100,6 +100,12 @@ Page({
     wx.navigateTo({
       url : "userMoney/index"
     })
-  }
+  },
   
+  // 我的收益
+  JumpToEarnings : function(){
+    wx.navigateTo({
+      url : 'myEarnings/index'
+    })
+  }
 })

@@ -50,7 +50,7 @@
 <view class='line'></view>
 
 <view class='userList'>
-  <view class='earnings'>
+  <view class='earnings' bindtap='JumpToEarnings'>
     <view>我的收益</view>
   </view>
   <view class='guessing'>

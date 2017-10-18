@@ -122,10 +122,9 @@ swiper-item {
   box-sizing: border-box;
   width: 220rpx;
   height: 220rpx;
-  position: absolute;
+  position: relative;
   background: transparent;
-  top: 42rpx;
-  left: 271rpx;
+  margin: 36rpx 0 36rpx 271rpx;
 }
 
 .Rate > view {
@@ -219,4 +218,87 @@ swiper-item {
   height: 50rpx;
   font-size: 24rpx;
   color: #a7aec0;
+}
+
+.RateTitle {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.RateTitle > view {
+  width: 33.33%;
+  height: 122rpx;
+  font-size: 28rpx;
+  color: #ee7142;
+  text-align: center;
+}
+
+.RateTitle .borBtm{
+  border-bottom: 2.8rpx solid #eee;
+}
+
+.sideLine {
+  position: relative;
+}
+
+.sideLine:after{
+  content: '';
+  position: absolute;
+  width: 2.8rpx;
+  height: 49rpx;
+  top: 28rpx;
+  left: 0;
+  background: #eee;
+}
+
+.sideLine:before{
+  content: '';
+  position: absolute;
+  width: 2.8rpx;
+  height: 49rpx;
+  background: #eee;
+  top: 28rpx;
+  right: 0;
+}
+
+.RateTitle > view view {
+  height: 63rpx;
+  line-height: 63rpx;
+}
+
+.RateTitle view text {
+  height: 28rpx;
+  line-height: 28rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+
+.bottomItem {
+  border-top: 18rpx solid #eee;
+}
+
+.bottomItem > view {
+  float: left;
+  width: 33.33%;
+  height: 114rpx;
+  text-align: center;
+  padding-top: 16rpx;
+}
+
+.bottomItem > view text {
+  height: 56rpx;
+  line-height: 56rpx;
+  font-size: 28rpx;
+  color: #717481;
+}
+
+.bottomItem > view view {
+  font-size: 24rpx;
+  color: #333;
+  height: 40rpx;
+  line-height: 40rpx;
 }
