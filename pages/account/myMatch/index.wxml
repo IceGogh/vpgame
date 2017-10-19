@@ -56,3 +56,28 @@
       </view>
     </view>
   </view>
+  <view class='selectArea'>
+    <view class='selectLine'>
+      <view bindtap='selectAlloption'>
+        {{selectAllItem[selectAllchooseIndex]}}
+        <view class='{{selectAllFlag == true ? "" : "select"}}'></view>
+      </view>
+      <view bindtap='selectResultoption'>
+        {{selectResultItem[selectResultchooseIndex]}}
+        <view class='{{selectResultFlag == true ? "" : "select"}}'></view>
+      </view>
+      <view class='time' bindtap='timeRort'>
+        时间
+        <view class='{{timeRortFlag ? "selectTop" : ""}}'></view>
+        <view class='{{timeRortFlag ? "" : "selectBottom"}}'></view>
+      </view>
+    </view>
+    <view class='selectList'>
+      <view style="height:{{selectAllFlag ? '0' : 84*selectAllItem.length+'rpx'}}" class='selectAll overfl {{selectAllFlag == true ? "" : "selectListShow"}}'>
+        <view data-index="{{index}}" class='{{selectAllchooseIndex == index ? "selectAllchoose" : ""}}' bindtap="selectShow" wx:for="{{selectAllItem}}" wx:key=''>{{item}}</view>
+      </view>
+      <view style="height:{{selectResultFlag ? '0' : 84*selectResultItem.length+'rpx'}}" class='selectResult overfl {{selectResultFlag == true ? "" : "selectListShow"}}'>
+        <view data-index="{{index}}" class='{{selectResultchooseIndex == index ? "selectAllchoose" : ""}}' bindtap="selectShow2" wx:for="{{selectResultItem}}" wx:key=''>{{item}}</view>
+      </view>
+    </view>
+  </view>

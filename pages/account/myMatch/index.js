@@ -8,8 +8,13 @@ Page({
     weekOrTotalData : 1,
     weekRate : Math.round(0.6111 * 100),
     totalRate: Math.round(0.48777 * 100),
-    aa : false,
-    cc : true
+    selectAllItem: ['全部', 'DOTA2', 'CSGO', '体育赛事'],
+    selectAllFlag : true,
+    selectAllchooseIndex : 0,
+    selectResultItem : ['全部', '进行中', '未开始', '赢', '输'],
+    selectResultFlag : true,
+    selectResultchooseIndex : 0,
+    timeRortFlag : true
   },
 
   // 选择 week 周数据统计
@@ -37,6 +42,62 @@ Page({
     })
   },
 
+  // timeSort 按时间排序
+  timeRort : function(){
+    if (!this.data.selectAllFlag || !this.data.selectResultFlag){
+      this.setData({
+        selectAllFlag : true,
+        selectResultFlag : true
+      })
+    }
+    this.setData({
+      timeRortFlag: !this.data.timeRortFlag
+    })
+  },
+
+  // 打开selectAllchoose选框
+  selectAlloption : function(){
+    if (!this.data.selectResultFlag){
+      this.setData({
+        selectResultFlag: true
+      })
+    }
+    this.setData({
+      selectAllFlag: !this.data.selectAllFlag
+    })
+  },
+
+  // 打开selectResultchoose选框
+  selectResultoption: function () {
+    if (!this.data.selectAllFlag) {
+      this.setData({
+        selectAllFlag: true
+      })
+    }
+    this.setData({
+      selectResultFlag: !this.data.selectResultFlag
+    })
+  },
+
+  // selectAllchoose 选择比赛项目类型
+  selectShow: function(e){
+    var val = e.target.dataset.index;
+    this.setData({
+      selectAllchooseIndex: val,
+      selectAllFlag: !this.data.selectAllFlag
+    })
+
+  },
+
+  // selectResultchoose 选择比赛结果分类
+  selectShow2: function (e) {
+    var val = e.target.dataset.index;
+    this.setData({
+      selectResultchooseIndex: val,
+      selectResultFlag: !this.data.selectResultFlag
+    })
+
+  },
   /**
    * 生命周期函数--监听页面加载
    */
