@@ -4,6 +4,7 @@ Page({
   /**
    * 页面的初始数据
    */
+  
   data: {
     weekOrTotalData : 1,
     weekRate : Math.round(0.6111 * 100),
@@ -14,7 +15,130 @@ Page({
     selectResultItem : ['全部', '进行中', '未开始', '赢', '输'],
     selectResultFlag : true,
     selectResultchooseIndex : 0,
-    timeRortFlag : true
+    timeRortFlag : true,
+    dataList : [
+      {
+        "title" : [
+          "Elague",
+          "2017-10-11 10:17:44" 
+        ],
+        "result" : [
+          "猜胜负",
+          "输"
+        ],
+        "detail" : [
+          {
+            "team" : [
+              "VG" , 0.63 , "IG" , 1.46
+            ],
+            "accessory" : [
+              0.15 , -0.15
+            ],
+            "money" : [
+              1 , 1
+            ]
+          }
+        ],
+        "accessoryDetail" : [
+          {"title" : "DOTA2"},
+          {"du" : "102.3"},
+          {
+            "img" : [
+              "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170316/X0005EAH.png" ,
+                "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005C9Q.png",
+              "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170316/X0005EAH.png" ,
+              "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005C9Q.png",
+              "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170316/X0005EAH.png" ,
+              "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005C9Q.png",
+              "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170316/X0005EAH.png"
+
+            ]
+          }
+        ],
+        "accessoryCheck" : false
+      },
+      {
+        "title" : [
+          "Elague",
+          "2017-10-11 10:17:44"
+        ],
+        "result" : [
+          "猜胜负",
+          "输"
+        ],
+        "detail" : [
+          {
+            "team" : [
+              "VG" , 0.63 , "IG" , 1.46
+            ],
+            "accessory" : [
+              0.15 , -0.15
+            ],
+            "money" : [
+              1 , 1
+            ]
+          }
+        ],
+        "accessoryDetail" : [
+          {"title" : "DOTA2"},
+          {"du" : "102.3"},
+          {
+            "img" : [
+              "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170316/X0005EAH.png" ,
+                "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005C9Q.png",
+              "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170316/X0005EAH.png" ,
+              "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005C9Q.png",
+              "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170316/X0005EAH.png" ,
+              "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005C9Q.png",
+              "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170316/X0005EAH.png"
+
+            ]
+          }
+        ],
+        "accessoryCheck" : false
+      },
+      {
+        "title" : [
+          "Elague",
+          "2017-10-11 10:17:44"
+        ],
+        "result" : [
+          "猜胜负",
+          "输"
+        ],
+        "detail" : [
+          {
+            "team" : [
+              "VG" , 0.63 , "IG" , 1.46
+            ],
+            "accessory" : [
+              0.15 , -0.15
+            ],
+            "money" : [
+              1 , 1
+            ]
+          }
+        ],
+        "accessoryDetail" : [
+          {"title" : "DOTA2"},
+          {"du" : "102.3"},
+          {
+            "img" : [
+              "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170316/X0005EAH.png" ,
+              "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005C9Q.png",
+              "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170316/X0005EAH.png" ,
+              "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005C9Q.png",
+              "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170316/X0005EAH.png" ,
+              "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005C9Q.png",
+              "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170316/X0005EAH.png"
+
+            ]
+          }
+        ],
+        "accessoryCheck" : false
+      }
+
+    ]
   },
 
   // 选择 week 周数据统计
@@ -97,6 +221,15 @@ Page({
       selectResultFlag: !this.data.selectResultFlag
     })
 
+  },
+
+  // 打开饰品下注明细 accessoryTap
+  accessoryTap : function(e){
+    var Ind = e.target.dataset.nub
+    console.log(Ind)
+    // this.setData({
+    //   dataList[Ind].accessoryCheck : !this.data.dataList[Ind].accessoryCheck
+    // })
   },
   /**
    * 生命周期函数--监听页面加载

@@ -81,3 +81,70 @@
       </view>
     </view>
   </view>
+
+  <!-- list  -->
+  <view class='dataList'>
+    <view wx:for="{{dataList}}">
+      <!-- 详情  -->
+      <view class='dataBox'>
+        <view class='title'>
+          <view>{{dataList[index].title[0]}}</view>
+          <view>{{dataList[index].title[1]}}</view>
+        </view>
+        <view class='result'>
+          <view>{{dataList[index].result[0]}}</view>
+          <view class="textCt Lose">{{dataList[index].result[1]}}</view>
+        </view>
+        <view class='detail'>
+          <view>
+            <view class="chooseTeam">{{dataList[index].detail[0].team[0]}}</view>
+            <view>
+              <text class='chooseTeam'>{{dataList[index].detail[0].team[1]}}</text>
+              vs
+              <text>{{dataList[index].detail[0].team[3]}}</text>
+            </view>
+            <view>{{dataList[index].detail[0].team[2]}}</view>
+          </view>
+          <view>
+            <view>饰品</view>
+            <view class="du">押注:
+              <view>${{dataList[index].detail[0].accessory[0]}}</view>
+            </view>
+            <view class="du">收益:
+              <view class="rltLose">${{dataList[index].detail[0].accessory[1]}}</view>
+            </view>
+          </view>
+          <view>
+            <view>赏金</view>
+            <view class="du">押注:
+              <view>{{dataList[index].detail[0].money[0]}}</view>
+            </view>
+            <view class="du">收益:
+              <view>{{dataList[index].detail[0].money[1]}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <!-- 饰品相关  -->
+      <view class='accessoryInfo overfl {{dataList[index].accessoryCheck ? "" : "height0"}}'>
+        <view class='title'>{{dataList[index].accessoryDetail[0].title}}</view>
+        <view class='clearFloat'>
+          <view class='betL'>
+            <view>押注</view>
+            <view>${{dataList[index].accessoryDetail[1].du}}</view>
+          </view>
+          <view class='betR'>
+            <view wx:for="{{dataList[index].accessoryDetail[2].img}}">
+              <image src="{{item}}"></image>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <!-- 饰品显示开关  -->
+      <view class='accessoryFlag'>
+        <view data-nub="{{index}}" class="{{dataList[index].accessoryCheck ? 'open' : ''}}" bindtap='accessoryTap'></view>
+      </view>
+    </view>
+  </view>

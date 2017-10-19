@@ -1,3 +1,7 @@
+page {
+  background: #edecec;
+}
+
 .Bg {
   background: url(https://match.steampp.com/mobile/static/user/images/header_bj.jpg) no-repeat center center;
   background-size: cover;
@@ -228,6 +232,7 @@
   width: 750rpx;
   font-size: 26rpx;
   color: #555;
+  z-index: 100;
 }
 
 .selectList > view {
@@ -255,4 +260,182 @@
   color: red;
   background: url(https://vip-match.oss-cn-hangzhou.aliyuncs.com/mobile/static/user/images/user_chosed.png) no-repeat 680rpx center;
   background-size: 28rpx 28rpx;
+}
+
+.dataList {
+  position: relative;
+  z-index: 10;
+}
+
+.dataList > view {
+  width: 90%;
+  margin: 22rpx auto 0;
+  border-radius: 14rpx;
+  padding: 0 10rpx 8rpx;
+  background: #fff;
+  position: relative;
+  color: #888;
+  font-size: 26rpx;
+}
+
+.dataList .title {
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.dataList .title :nth-child(1){
+  float: left;
+  max-width: 56%;
+  overflow: hidden;
+  text-indent: 20rpx;
+}
+
+.dataList .title :nth-child(2){
+  float: right;
+  max-width: 44%;
+  overflow: hidden;
+  padding-right:3%;
+}
+
+.dataList .result {
+  height: 52rpx;
+  line-height: 52rpx;
+  border-top: 1.4rpx #eee solid;
+  border-bottom: 1.4rpx #eee solid;
+}
+
+.dataList .result :nth-child(1){
+  text-indent: 20rpx;
+  float: left;
+}
+
+.dataList .result :nth-child(2){
+  position: relative;
+  top: 4rpx;
+  left: 22rpx;
+  width: 136rpx;
+  height: 52rpx;
+  line-height: 44rpx;
+  float: right;
+  color: #fff;
+}
+
+.dataList .result .Lose {
+  background: url(https://vip-match.oss-cn-hangzhou.aliyuncs.com/mobile/static/user/images/kind_lose.png) no-repeat center center;
+  background-size: cover;
+}
+
+.dataList .detail {
+  width: 100%;
+  height: 126rpx;
+  margin: 8rpx 0 8rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #666;
+}
+
+.dataList .detail > view {
+  width: 33.33%;
+  height: 126rpx;
+  float: left;
+}
+
+.dataList .detail .chooseTeam {
+  color: rgb(224, 40, 38);
+}
+
+.dataList .detail > view view{
+  height: 42rpx;
+  width: 100%;
+  line-height: 42rpx;
+}
+
+.dataList .detail .du {
+  text-align: left;
+  text-indent: 44rpx;
+  position: relative;
+}
+
+.dataList .detail .du .rltLose {
+  color: rgb(224, 40, 38);
+}
+
+.dataList .detail .du view {
+  width: 70%;
+  position: absolute;
+  top: 0;
+  left: 66rpx;
+}
+
+.dataList .accessoryInfo{
+  width: 98%;
+  margin: 0 auto;
+  border-top: 1.4rpx #eee solid;
+}
+
+.dataList .height0{
+  height: 0;
+  border: 0;
+  transition: all 1.6s;
+}
+
+.dataList .accessoryInfo .title {
+  margin-top: 16rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+  font-size: 22rpx;
+  text-indent: 34rpx;
+}
+
+.dataList .accessoryInfo .betL{
+  width: 140rpx;
+  text-align: center;
+  color: #666;
+  font-size: 22rpx;
+  float: left;
+}
+
+.dataList .accessoryInfo .betL > view {
+  height: 36prx;
+  line-height: 36rpx;
+}
+
+.dataList .accessoryInfo .betR{
+  float: right;
+  width: 508rpx;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.dataList .accessoryInfo .betR > view {
+  float: left;
+  width: 96rpx;
+  height: 64rpx;
+  padding: 2.8rpx;
+}
+
+.betR image {
+  width : 100%;
+  height: 100%;
+}
+
+.dataList .accessoryFlag {
+  height: 24rpx;
+  margin: 14rpx 0 4rpx;
+}
+
+.dataList .accessoryFlag > view {
+  width: 32rpx;
+  height: 32rpx;
+  margin: 0 auto;
+   background: url(https://vip-match.oss-cn-hangzhou.aliyuncs.com/mobile/static/user/images/arrow.png) no-repeat center center; 
+  /* background: red; */
+  background-size: contain;
+  transition: all .4s;
+}
+
+.dataList .accessoryFlag > view.open {
+  transform: rotate(180deg);
 }

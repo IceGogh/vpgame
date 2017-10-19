@@ -11,6 +11,14 @@ page {
 .overfl {
   overflow: hidden;
 }
+.clearFloat::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  clear: both;
+}
 .container {
   height: 100%;
   display: flex;
