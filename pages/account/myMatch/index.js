@@ -54,8 +54,7 @@ Page({
 
             ]
           }
-        ],
-        "accessoryCheck" : false
+        ]
       },
       {
         "title" : [
@@ -94,8 +93,7 @@ Page({
 
             ]
           }
-        ],
-        "accessoryCheck" : false
+        ]
       },
       {
         "title" : [
@@ -134,11 +132,13 @@ Page({
 
             ]
           }
-        ],
-        "accessoryCheck" : false
+        ]
       }
 
-    ]
+    ],
+   
+    accessoryCheckNub : -1
+  
   },
 
   // 选择 week 周数据统计
@@ -226,10 +226,15 @@ Page({
   // 打开饰品下注明细 accessoryTap
   accessoryTap : function(e){
     var Ind = e.target.dataset.nub
-    console.log(Ind)
-    // this.setData({
-    //   dataList[Ind].accessoryCheck : !this.data.dataList[Ind].accessoryCheck
-    // })
+    if (this.data.accessoryCheckNub !== Ind){
+      this.setData({
+        accessoryCheckNub: Ind
+      })
+    }else{
+      this.setData({
+        accessoryCheckNub: -1
+      })
+    }
   },
   /**
    * 生命周期函数--监听页面加载

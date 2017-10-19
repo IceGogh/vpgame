@@ -127,7 +127,7 @@
       </view>
 
       <!-- 饰品相关  -->
-      <view class='accessoryInfo overfl {{dataList[index].accessoryCheck ? "" : "height0"}}'>
+      <view class='accessoryInfo overfl {{ accessoryCheckNub == index ? "" : "height0"}}'>
         <view class='title'>{{dataList[index].accessoryDetail[0].title}}</view>
         <view class='clearFloat'>
           <view class='betL'>
@@ -144,7 +144,7 @@
 
       <!-- 饰品显示开关  -->
       <view class='accessoryFlag'>
-        <view data-nub="{{index}}" class="{{dataList[index].accessoryCheck ? 'open' : ''}}" bindtap='accessoryTap'></view>
+        <view data-nub="{{index}}" class="{{ accessoryCheckNub == index ? 'open' : ''}}" bindtap='accessoryTap'></view>
       </view>
     </view>
   </view>
