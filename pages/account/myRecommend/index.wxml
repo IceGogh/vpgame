@@ -1,0 +1,46 @@
+  <view class="common-header textCt color-f">
+    <view class="backBtn" bindtap="goBack"></view>
+    <text>我的推荐</text>
+  </view>
+  <view class='Bg'></view>
+  <view class='list'>
+    <view>好友注册时需填写推荐人ID, 则该用户被推荐人成功招募</view>
+    <view>成功被招募的玩家达到以下条件, 则推荐人享有相应的招募福利</view>
+    <view class='form clearFloat textCt'>
+        <view class='borBtm borRt'>竞猜总量</view>
+        <view class='h2 borBtm borRt'>
+          <view>$100</view>
+          <view>(500赏金)</view>
+        </view>
+        <view class='h2 borBtm borRt'>
+          <view>$1000</view>
+          <view>(5000赏金)</view>
+        </view>
+        <view class='h2 width28 borBtm'>
+          <view>$30000</view>
+          <view>(150000赏金)</view>
+        </view>
+        <view class='borRt'>竞猜总量</view>
+        <view class='borRt'>18微信红包</view>
+        <view class='borRt'>58微信红包</view>
+        <view class='width28'>388微信红包</view>
+    </view>
+
+    <view>为防止作弊套利, 被招募的玩家均需经过支付宝认证方可领取福利</view>
+    <!-- 分享  -->
+    <view class='share textCt' bindtap='showCode'>分享</view>
+  </view>
+    <!-- 二维码  -->
+  <view class='shareCode {{showCodeFlag ? "showcode" : ""}}'>
+    <view class='CodeArea'>
+      <view class='code'>
+        <image src='https://account.vipgame.com/files/usersCode/X0000DZT.png'></image>
+      </view>
+      <view class='link'>
+        <view class='textCt'>您的推广二维码已生成</view>
+        <view data-url="" class='textCt'>复制链接</view>
+        <view class='textCt'>点击保存二维码</view>
+      </view>
+    </view>
+    <view class='cancle textCt' bindtap='showCode'>取消</view>
+  </view>

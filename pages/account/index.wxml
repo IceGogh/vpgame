@@ -53,10 +53,10 @@
   <view class='earnings' bindtap='JumpToEarnings'>
     <view>我的收益</view>
   </view>
-  <view class='guessing'>
+  <view class='guessing' bindtap='JumpToMyMatch'>
     <view>我的竞猜</view>
   </view>
-  <view class='recommend'>
+  <view class='recommend' bindtap='JumpToMyRecommend'>
     <view>我的推荐</view>
   </view>
   <view class='property'>

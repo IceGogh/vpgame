@@ -107,5 +107,19 @@ Page({
     wx.navigateTo({
       url : 'myEarnings/index'
     })
+  },
+
+  // 我的竞猜
+  JumpToMyMatch : function(){
+    wx.navigateTo({
+      url : 'myMatch/index'
+    })
+  },
+
+  // 我的推荐
+  JumpToMyRecommend: function () {
+    wx.navigateTo({
+      url: 'myRecommend/index'
+    })
   }
 })

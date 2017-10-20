@@ -289,6 +289,12 @@ Page({
     drawing(cvs2, this.data.totalRate);
   },
 
+
+  // 页面后退
+  goBack: function (ops) {
+    wx.navigateBack();
+  },
+
   /**
    * 生命周期函数--监听页面显示
    */

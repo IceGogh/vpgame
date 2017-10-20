@@ -1,0 +1,159 @@
+.Bg {
+  background: url(https://vip-account.oss-cn-hangzhou.aliyuncs.com/mobile/static/user/img/recommend.jpg) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 406rpx;
+}
+
+.list {
+  width: 96%;
+  padding: 36rpx 0;
+  background: #fff;
+  border-radius: 8rpx;
+  margin: 0 auto;
+  position: relative;
+  top: -80rpx;
+  z-index: 10;
+  box-shadow: 0 8rpx 22rpx RGBA(54,15,0,0.12);
+}
+
+.list > view {
+  padding: 6rpx 78rpx;
+  background-repeat: no-repeat;
+  background-position: 24rpx center;
+  background-size: 32rpx 36rpx;
+  font-size: 24rpx;
+  color: #666;
+}
+
+.list > view:nth-of-type(1) {
+  background-image: url(https://vip-account.oss-cn-hangzhou.aliyuncs.com/mobile/static/user/img/recommend.png)
+}
+.list > view:nth-of-type(2) {
+  background-image: url(https://vip-account.oss-cn-hangzhou.aliyuncs.com/mobile/static/user/img/recommend2.png)
+}
+.list > view:nth-of-type(4) {
+  background-image: url(https://vip-account.oss-cn-hangzhou.aliyuncs.com/mobile/static/user/img/recommend3.png)
+}
+
+.list .form {
+  padding: 0;
+  margin:6rpx 78rpx;
+  font-size: 23rpx;
+  box-sizing: border-box;
+  border: 0.8rpx #666 solid;
+}
+
+.list .form > view {
+  width: 23%;
+  float: left;
+  height: 72rpx;
+  line-height: 72rpx;
+  box-sizing: border-box;
+}
+
+.list .form .borBtm {
+  border-bottom: .8rpx #666 solid;
+}
+
+.list .form .borRt {
+  border-right: .8rpx #666 solid;
+}
+
+.list .form .width28{
+  width: 31%;
+}
+
+.list .form .h2 {
+  height: 72rpx;
+  line-height: 36rpx;
+}
+
+.list .share {
+  padding: 0;
+  background: #efb32f;
+  border-radius: 18rpx;
+  width: 672rpx;
+  height: 98rpx;
+  margin: 36rpx auto 0;
+  line-height: 98rpx;
+  color: #fff;
+  font-size: 34rpx;
+}
+
+.shareCode {
+  width: 750rpx;
+  height: 420rpx;
+  position: fixed;
+  left: 0;
+  bottom: -434rpx;
+  transition: all .7s;
+  z-index: 100;
+  background: #fff;
+  box-shadow: 0 -6rpx 20rpx RGBA(54,15,0,0.12);
+}
+
+.showcode {
+  bottom : 0;
+}
+
+.shareCode .CodeArea {
+  height: 334rpx;
+  width: 100%;
+  position: relative;
+}
+
+.shareCode .CodeArea .code {
+  width: 266rpx;
+  height: 266rpx;
+  position: absolute;
+  top: 36rpx;
+  left: 78rpx;
+  background: url(https://vip-account.oss-cn-hangzhou.aliyuncs.com/home/mobile/static/urs/recommend/img/ewmk.png) no-repeat center center;
+  background-size: contain;
+}
+
+.shareCode .CodeArea image {
+  position: absolute;
+  width: 242rpx;
+  height: 242rpx;
+  top: 12rpx;
+  left: 12rpx; 
+}
+
+.shareCode .link {
+  position: absolute;
+  top: 36rpx;
+  left: 376rpx;
+  width: 300rpx;
+  height: 266rpx;
+  font-size: 24rpx;
+}
+
+.shareCode .link > view {
+  width: 196rpx;
+  height: 56rpx;
+  margin: 18rpx auto;
+  border-radius : 6rpx;
+  line-height: 56rpx;
+  color: #fff;
+  background: #ee7142;
+}
+
+.shareCode .link > view:nth-of-type(1){
+  width: 100%;
+  border-radius: 0;
+  background:#fff;
+  height: 72rpx;
+  line-height: 72rpx;
+  color: #999;
+}
+
+.shareCode .cancle {
+  width: 100%;
+  height: 84rpx;
+  line-height: 84rpx;
+  color: #999;
+  border-top: 2rpx solid #dfdfdf;
+  font-size: 28rpx;
+}
