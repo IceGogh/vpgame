@@ -1,0 +1,50 @@
+  <view class="common-header textCt color-f">
+    <view class="backBtn" bindtap="goBack"></view>
+    <text>资产摘要</text>
+  </view>
+  <view class='title'>
+    <view class='{{assetKind == 0 ? "color" : ""}}' data-nub="0" bindtap='switchTap'>赏金记录</view>
+    <view class='{{assetKind == 1 ? "color" : ""}}' data-nub="1" bindtap='switchTap'>碎银记录</view>
+    <view class='{{assetKind == 2 ? "color" : ""}}' data-nub="2" bindtap='switchTap'>充值记录</view>
+  </view>
+
+  <view class='selectArea'>
+    <view class='selectTitle'>
+      <view wx:for="{{selectItemWords[assetKind]}}" data-selNub="{{index}}" class='{{selected == index ? "selected" : "" }}' bindtap='selectBy'>{{selectItemWords[assetKind][index]}}</view>
+    </view>
+    <view class='selectItem'>
+      <view class='selectForm' wx:for="{{selectWd}}" hidden="{{index == assetKind ? false : true}}">
+        <view class="width94" wx:for="{{item}}" hidden="{{selected == index ? false : true}}">
+          <view wx:for="{{item}}" class='width94 condition'>{{item}}</view>
+        </view>
+      </view>
+    </view>  
+  </view>
+
+
+  <swiper style="height:{{(assetKind == 0 ? assetMoneyData.length : ( assetKind == 1 ? assetSilData.length : assetRechargeData.length)) * 110}}rpx " class='dataList {{assetKind == 0 ? "" : ( assetKind == 1 ? "switch2" : "switch3")}}' current="{{assetKind}}" bindchange='switchAssetKind'>
+    <swiper-item>
+      <view class='dataItem' wx:for="{{assetMoneyData}}">
+        <view class='time textCt'>{{assetMoneyData[index].time}}</view>
+        <view class='kind'>{{assetMoneyData[index].kind}}</view>
+        <view class='matchName'>{{assetMoneyData[index].matchName}}</view>
+        <view class='data textCt'>{{assetMoneyData[index].data}}</view>
+      </view>      
+    </swiper-item>
+    <swiper-item>
+      <view class='dataItem' wx:for="{{assetSilData}}">
+        <view class='time textCt'>{{assetSilData[index].time}}</view>
+        <view class='kind'>{{assetSilData[index].kind}}</view>
+        <view class='matchName'>{{assetSilData[index].matchName}}</view>
+        <view class='data textCt'>{{assetSilData[index].data}}</view>
+      </view>      
+    </swiper-item>
+    <swiper-item>
+      <view class='dataItem' wx:for="{{assetRechargeData}}">
+        <view class='time textCt'>{{assetRechargeData[index].time}}</view>
+        <view class='kind'>{{assetRechargeData[index].kind}}</view>
+        <view class='matchName'>订单号:{{assetRechargeData[index].matchName}}</view>
+        <view class='data textCt'>￥{{assetRechargeData[index].data}}</view>
+      </view>      
+    </swiper-item>
+  </swiper>

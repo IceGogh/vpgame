@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/account/myAssets/index",
     "pages/match/index",
     "pages/account/myBag/index",
     "pages/roll/index",
@@ -27,7 +28,7 @@
     "borderStyle": "black",
     "list": [
       {
-        "pagePath": "pages/match/index",
+        "pagePath": "pages/account/myAssets/index",
         "iconPath": "static/image/foot_detail.png",
         "selectedIconPath": "static/image/foot_detail_hover.png",
         "text": "竞猜",

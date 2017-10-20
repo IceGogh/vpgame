@@ -1,0 +1,162 @@
+page {
+  color: #919191;
+}
+.title {
+  margin-top: 84rpx;
+  height: 106rpx;
+  line-height: 106rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.title > view {
+  width: 28%;
+  height: 106rpx;
+  font-size: 24rpx;
+  text-align: center;
+}
+
+.title view.color{
+  color: #ee7142;
+  font-weight: bold;
+}
+
+
+.selectArea {
+  position: relative;
+}
+
+.selectTitle {
+  width: 100%;
+  height: 84rpx;
+  line-height: 84rpx;
+  color: #666;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  border-bottom: 2rpx #eee solid;
+}
+
+.selectTitle > view {
+  width: 30%;
+  height: 84rpx;
+  text-align: center;
+  position: relative;
+  font-size: 24rpx;
+}
+
+.selectTitle > view::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 10rpx #555 solid;
+  border-left: 8rpx transparent solid;
+  border-right: 8rpx transparent solid;
+  top: 38rpx;
+  right: 36rpx;
+  transition: all .4s;
+}
+
+.selectTitle .time::after {
+  right: 56rpx;
+}
+
+.selectTitle .selected::after {
+  transform: rotate(180deg);
+}
+
+.selectArea .selectItem {
+  position: absolute;
+  width: 100%;
+
+  background: green;
+  top: 86rpx;
+  left: 0;
+  z-index: 300;
+  background: #fff;
+}
+
+.selectArea .selectForm {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.selectForm > view {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.selectItem .condition {
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+
+.dataList {
+  position: relative;
+}
+
+.dataList::after {
+  content: "";
+  position: absolute;
+  top: -102rpx;
+  left: 108rpx;
+  width: 0;
+  height: 0;
+  border-bottom: 16rpx #fff solid;
+  border-left: 12rpx transparent solid;
+  border-right: 12rpx transparent solid;
+  transition: all .4s;
+}
+
+.switch2::after {
+  left: 362rpx;
+}
+
+.switch3::after {
+  left: 614rpx;
+}
+
+.dataList  swiper-item {
+  overflow: visible;
+}
+
+.dataItem {
+  width: 96%;
+  height: 108rpx;
+  line-height: 108rpx;
+  margin: 0 auto;
+  border-bottom: 2rpx solid #eee;
+}
+
+.dataItem > view {
+  float: left;
+  font-size: 24rpx;
+  height: 108rpx;
+  overflow: hidden;
+}
+
+.dataItem .time {
+  width: 32%;
+}
+
+.dataItem .kind {
+  width: 18%;
+}
+
+.dataItem .matchName {
+  width: 34%;
+}
+
+.dataItem .data {
+  width: 16%;
+  color: #ffa101;
+}
