@@ -10,12 +10,12 @@
 
   <view class='selectArea'>
     <view class='selectTitle'>
-      <view wx:for="{{selectItemWords[assetKind]}}" data-selNub="{{index}}" class='{{selected == index ? "selected" : "" }}' bindtap='selectBy'>{{selectItemWords[assetKind][index]}}</view>
+      <view wx:for="{{selectItemWords[assetKind]}}" data-selNub="{{index}}" class='{{selected == index ? "selected" : "" }}' bindtap='selectBy' wx:if="{{selectItemWords[assetKind][index] == '' ? false : true}}">{{selectItemWords[assetKind][index]}}</view>
     </view>
     <view class='selectItem'>
       <view class='selectForm' wx:for="{{selectWd}}" hidden="{{index == assetKind ? false : true}}">
-        <view class="width94" wx:for="{{item}}" hidden="{{selected == index ? false : true}}">
-          <view wx:for="{{item}}" class='width94 condition'>{{item}}</view>
+        <view class='overfl' style="height: {{ selected == index ? item.length * 82 : 0}}rpx" wx:for="{{item}}">
+          <view wx:for="{{item}}" class='condition'>{{item}}</view>
         </view>
       </view>
     </view>  

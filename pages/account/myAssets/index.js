@@ -9,7 +9,7 @@ Page({
     selectItemWords : [
       ["收支类型", "赏金渠道", "时间"],
       ["收支类型", "碎银渠道", "时间"],
-      ["充值渠道", "订单编号", "时间"]
+      ["充值渠道", "", "时间"]
     ],
     selectWd : [
       [
@@ -118,10 +118,10 @@ Page({
     var Ind = e.target.dataset.nub;
     if (this.data.assetKind !== Ind ){
       this.setData({
-        assetKind : Ind
+        assetKind : Ind,
+        selected : -1
       })
     }
-    console.log(this.data.assetKind  , Ind)
   },
 
   // 根据 title类型筛选 selectBy
@@ -136,6 +136,17 @@ Page({
         selected : -1
       })
     }
+  },
+
+  // 选择 condition
+  selectCondition : function(e){
+    let condiFir = Math.ceil(e.target.dataset.condipre/3) -1 
+      , condiPre = e.target.dataset.condipre -1
+      , condi = e.target.dataset.condi;
+    console.log(condiFir)
+    console.log(condiPre)
+    console.log(condi )
+
   },
   /**
    * 生命周期函数--监听页面加载
