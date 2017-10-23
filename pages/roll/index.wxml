@@ -1,2 +1,172 @@
-<!--pages/roll/index.wxml-->
-<text>pages/roll/index.wxml</text>
+<view class="rollHeader">
+  <view class='search'>
+    <input type='number'></input>
+    <view></view>
+  </view>
+  <view class='create'></view>
+</view>
+<view class='rollMask'>
+  <view class='{{swiperPage == 0 ? "active" : ""}}' bindtap='switch0'>
+    官方福利ROLL
+    <view class='line'></view>
+  </view>
+  <view class='{{swiperPage == 0 ? "" : "active"}}'   bindtap='switch1'>玩家ROLL奖励</view>
+</view>
+<view class='rollPlay overfl' style='height: {{swiperPage == 0 ? 0 : ""}}'>
+  <view class='{{swiperPage == 1 ?  "select" : ""}}'  bindtap='switch1'>全部</view>
+  <view class='{{swiperPage == 2 ?  "select" : ""}}'  bindtap='switch2'>我的创建</view>
+  <view class='{{swiperPage == 3 ?  "select" : ""}}'  bindtap='switch3'>我的参加</view>
+</view>
+<!-- roll 房间 list  -->
+
+<swiper current='{{swiperPage}}' bindchange='swiperData' style="">
+  <!-- 官方ROLL  -->
+  <swiper-item>
+    <view class='room'>
+      <view class='title'>
+        <image src="https://roll.vipgame.com/home/static/roll/img/roll_official_header.jpg"></image>
+        <view class='overfl'>小菠菜们的回血ROLL房，赛事多，活动经常会有！</view>
+        <view>房间号: 5867</view>
+      </view>
+      <view class='img'>
+        <view wx:for="{{roomImg[0]}}">
+          <image src='{{item}}'></image>
+        </view>
+      </view>
+      <view class='info'>
+        <view>
+          截止时间　 :　 <span>09/29 16:32</span>
+        </view>
+        <view>
+          活动价值　 :　 <span>$99.82 （36件）</span>
+        </view>
+        <view class='bingo'>
+          <view class='get'>
+            <view class='textCt'>立即参加</view>
+            <view class='textCt'>（2/12）</view>
+          </view>
+          中奖人数　 :　 <span>36人</span>
+        </view>
+        <view>
+          参与等级　 :　 <span>掘金游民</span>
+        </view>
+        <!-- 活动说明 (官方福利ROLL)  -->
+        <view class='note'>
+          活动说明　 :　 <span>活动说明只在 官方ROLL 里面存在1111111111111111111111111111111</span>
+        </view>
+      </view>
+    </view>
+    <view class='room'>
+      <view class='title'>
+        <image src="https://roll.vipgame.com/home/static/roll/img/roll_official_header.jpg"></image>
+        <view class='overfl'>小菠菜们的回血ROLL房，赛事多，活动经常会有！</view>
+        <view>房间号: 5867</view>
+      </view>
+      <view class='img'>
+        <view wx:for="{{roomImg[0]}}">
+          <image src='{{item}}'></image>
+        </view>
+      </view>
+      <view class='info'>
+        <view>
+          截止时间　 :　 <span>09/29 16:32</span>
+        </view>
+        <view>
+          活动价值　 :　 <span>$99.82 （36件）</span>
+        </view>
+        <view class='bingo'>
+          <view class='get'>
+            <view class='textCt'>立即参加</view>
+            <view class='textCt'>（2/12）</view>
+          </view>
+          中奖人数　 :　 <span>36人</span>
+        </view>
+        <view>
+          参与等级　 :　 <span>掘金游民</span>
+        </view>
+        <!-- 活动说明 (官方福利ROLL)  -->
+        <view class='note'>
+          活动说明　 :　 <span>活动说明只在 官方ROLL 里面存在1111111111111111111111111111111</span>
+        </view>
+      </view>
+    </view>
+    <view class='room'>
+      <view class='title'>
+        <image src="https://roll.vipgame.com/home/static/roll/img/roll_official_header.jpg"></image>
+        <view class='overfl'>小菠菜们的回血ROLL房，赛事多，活动经常会有！</view>
+        <view>房间号: 5867</view>
+      </view>
+      <view class='img'>
+        <view wx:for="{{roomImg[0]}}">
+          <image src='{{item}}'></image>
+        </view>
+      </view>
+      <view class='info'>
+        <view>
+          截止时间　 :　 <span>09/29 16:32</span>
+        </view>
+        <view>
+          活动价值　 :　 <span>$99.82 （36件）</span>
+        </view>
+        <view class='bingo'>
+          <view class='get'>
+            <view class='textCt'>立即参加</view>
+            <view class='textCt'>（2/12）</view>
+          </view>
+          中奖人数　 :　 <span>36人</span>
+        </view>
+        <view>
+          参与等级　 :　 <span>掘金游民</span>
+        </view>
+        <!-- 活动说明 (官方福利ROLL)  -->
+        <view class='note'>
+          活动说明　 :　 <span>活动说明只在 官方ROLL 里面存在1111111111111111111111111111111</span>
+        </view>
+      </view>
+    </view>
+  </swiper-item>
+
+  <!-- 玩家ROLL  all-->
+  <swiper-item>
+        <view class='room'>
+      <view class='title'>
+        <image src="https://roll.vipgame.com/home/static/roll/img/roll_official_header.jpg"></image>
+        <view class='overfl'>小菠菜们的回血ROLL房，赛事多，活动经常会有！</view>
+        <view>房间号: 5867</view>
+      </view>
+      <view class='img'>
+        <view wx:for="{{roomImg[0]}}">
+          <image src='{{item}}'></image>
+        </view>
+      </view>
+      <view class='info'>
+        <view>
+          截止时间　 :　 <span>09/29 16:32</span>
+        </view>
+        <view>
+          活动价值　 :　 <span>$99.82 （36件）</span>
+        </view>
+        <view class='bingo'>
+          <view class='get'>
+            <view class='textCt'>立即参加</view>
+            <view class='textCt'>（2/12）</view>
+          </view>
+          中奖人数　 :　 <span>36人</span>
+        </view>
+        <view>
+          参与等级　 :　 <span>掘金游民</span>
+        </view>
+        <!-- 活动说明 (官方福利ROLL)  -->
+        <view class='note' wx:if="{{swiperPage == 0 ? true : false}}">
+          活动说明　 :　 <span>活动说明只在 官方ROLL 里面存在1111111111111111111111111111111</span>
+        </view>
+      </view>
+    </view>
+  </swiper-item>
+
+  <!-- 玩家ROLL  我的创建-->
+  <swiper-item>222</swiper-item>
+
+  <!-- 玩家ROLL  我参加的-->
+  <swiper-item>333</swiper-item>
+</swiper>

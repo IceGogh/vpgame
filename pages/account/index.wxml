@@ -59,16 +59,16 @@
   <view class='recommend' bindtap='JumpToMyRecommend'>
     <view>我的推荐</view>
   </view>
-  <view class='property'>
+  <view class='property' bindtap='JumpToMyAssets'>
     <view>资产摘要</view>
   </view>
-  <view class='message'>
+  <view class='message' bindtap='JumpToMsgCenter'>
     <view>消息中心</view>
   </view>
 
   <view class='line'></view>
 
-  <view class='question'>
+  <view class='question' bindtap='JumpToProblem'>
     <view>常见问题</view>
   </view>
 </view>

@@ -1,1 +1,62 @@
-/* pages/account/msgCenter/index.wxss */
+.msgList {
+  margin-top: 84rpx;
+}
+
+.msgList > view {
+  width: 96%;
+  height: 126rpx;
+  margin: 0 auto;
+  border-bottom: 1.4rpx #dfdfdf solid;
+  font-size: 24rpx;
+}
+
+.msgItem >view:nth-of-type(1) {
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 126rpx 126rpx;
+  height: 126rpx;
+  width: 126rpx;
+  float: left;
+}
+
+.msgItem >view:nth-of-type(2) {
+  height: 126rpx;
+  width: 460rpx;
+  float: left;
+}
+
+.msgItem >view:nth-of-type(2) :nth-child(1){
+  height: 50rpx;
+  line-height: 80rpx;
+}
+
+.msgItem >view:nth-of-type(2) :nth-child(2){
+  height: 70rpx;
+  line-height: 70rpx;
+  color:#a5a5a5;
+}
+
+.msgItem >view:nth-of-type(3) {
+  height: 126rpx;
+  width: 120rpx;
+  line-height: 126rpx;
+  float: right;
+  color: #dfdfdf;
+  text-align: right
+}
+
+.account >view:nth-child(1) {
+  background-image: url(https://vip-account.oss-cn-hangzhou.aliyuncs.com/mobile/static/account/notice/image/notice1.png)
+}
+
+.VIP >view:nth-child(1) {
+  background-image: url(https://vip-account.oss-cn-hangzhou.aliyuncs.com/mobile/static/account/notice/image/notice2.png)
+}
+
+.match >view:nth-child(1) {
+  background-image: url(https://vip-account.oss-cn-hangzhou.aliyuncs.com/mobile/static/account/notice/image/notice3.png)
+}
+
+.roll >view:nth-child(1) {
+  background-image: url(https://vip-account.oss-cn-hangzhou.aliyuncs.com/mobile/static/account/notice/image/notice4.png)
+}

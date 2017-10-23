@@ -1,2 +1,52 @@
-<!--pages/account/msgCenter/index.wxml-->
-<text>pages/account/msgCenter/index.wxml</text>
+  <view class="common-header textCt color-f">
+    <view class="backBtn" bindtap="goBack"></view>
+    <text>消息中心</text>
+  </view>
+  <view class='msgList'>
+    <view class='msgItem account'>
+      <view></view>
+      <view>
+        <view>
+          账户
+        </view>
+        <view class='msgItem msg'>
+          您通过 微信支付 充值 <text style="color: #ffb900">5</text>赏金已到账...
+        </view>
+      </view>
+      <view>
+        04:55
+      </view>
+    </view>
+    <view class='msgItem VIP'>
+      <view></view>
+      <view>
+        <view>VIP特权</view>
+        <view>
+          完善资料得到的饰品:
+        </view>
+      </view>
+      <view>
+        10:22
+      </view>
+    </view>
+    <view class='msgItem match'>
+      <view></view>
+      <view>
+        <view>竞猜中心</view>
+        <view>
+          您参加了ID为 X0000EPC The Majo.....
+        </view>
+      </view>
+      <view>
+        09:56
+      </view>
+    </view>
+    <view class='msgItem roll'>
+      <view></view>
+      <view>
+        <view>ROLL</view>
+        <view>您创建的Roll房间: 6030已经开启</view>
+      </view>
+      <view>03:50</view>
+    </view>
+  </view>

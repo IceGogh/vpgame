@@ -98,6 +98,18 @@ page {
   left: 0;
 }
 
+.selectForm > view::after {
+  content: "";
+  position: absolute;
+  background: url(https://vip-match.oss-cn-hangzhou.aliyuncs.com/mobile/static/user/images/user_chosed.png) no-repeat center center;
+  width: 28rpx;
+  height: 28rpx;
+  top: 28rpx;
+  right: 38rpx;
+  background-size: 28rpx 28rpx;
+  z-index: 300;
+}
+
 .selectItem .condition {
   width: 100%;
   height: 80rpx;

@@ -121,5 +121,26 @@ Page({
     wx.navigateTo({
       url: 'myRecommend/index'
     })
-  }
+  },
+
+  // 资产摘要
+  JumpToMyAssets: function () {
+    wx.navigateTo({
+      url: 'myAssets/index'
+    })
+  },
+
+  // 消息中心
+  JumpToMsgCenter: function () {
+    wx.navigateTo({
+      url: 'msgCenter/index'
+    })
+  },
+
+  // 常见问题
+  JumpToProblem: function () {
+    wx.navigateTo({
+      url: 'problem/index'
+    })
+  },
 })

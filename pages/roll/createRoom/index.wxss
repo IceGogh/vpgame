@@ -1,0 +1,256 @@
+.common-header {
+  opacity : 1;
+}
+
+.createInfo, .selectItem {
+  width: 692rpx;
+  margin: 96rpx auto 0;
+  padding: 14rpx 0;
+  background-color: #fff;
+  border-radius: 20rpx;
+  box-shadow: 0 0 4rpx 1.4rpx rgba(140,140,140,.3);
+}
+
+.createInfo .info {
+  padding: 14rpx;
+  height: 84rpx;
+  border-bottom: 1.4rpx solid #d2d2d2;
+}
+
+.createInfo image {
+  float: left;
+  width: 84rpx;
+  height: 84rpx;
+  border-radius: 50%;
+}
+
+.createInfo .info > view {
+  padding-left: 20rpx;
+  float: left;
+}
+
+.createInfo .info .name {
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 26rpx;
+  padding-left: 10rpx;
+}
+
+.createInfo .info .level {
+  width: 146rpx;
+  height: 44rpx;
+  line-height: 44rpx;
+  background: url(https://account.steampp.com/mobile/static/account/global/level/lvl_1.png) no-repeat center center;
+  background-size: 132rpx;
+  font-size: 22rpx;
+  color: #fff;
+}
+
+.createInfo .note {
+  padding: 14rpx;
+  font-size: 24rpx;
+}
+
+.createInfo .note > view {
+  height: 36rpx; 
+  color: #555;
+  line-height: 36rpx;
+}
+
+.createInfo .note > textarea {
+  margin: 20rpx auto 0;
+  height: 102rpx;
+  padding: 14rpx;
+  background-color: #f9f9f9;
+  color: #000;
+  border: 1.4rpx solid #d2d2d2;
+}
+
+.createInfo .set {
+  padding: 14rpx 0 0 34rpx;
+  font-size: 24rpx;
+  color: #555;
+}
+
+.createInfo .set picker {
+  height: 50rpx;
+  line-height: 50rpx;
+  position: relative;
+  margin: 10rpx auto;
+}
+
+.createInfo .set .date, .time, input{
+  position: absolute;
+  top: 0;
+  left: 134rpx;
+  width: 464rpx;
+  box-sizing: border-box;
+  border: 1.4rpx #eee solid;
+  height: 50rpx;
+  padding-left: 20rpx;
+}
+
+.createInfo .set > view {
+  height: 50rpx;
+  line-height: 50rpx;
+  position: relative;
+  margin: 10rpx auto;
+}
+
+.nextBtn {
+  width: 750rpx;
+  height: 84rpx;
+  line-height: 84rpx;
+  color: #ee7142;
+  font-size: 26rpx;
+  box-shadow: 0 0 1.4rpx rgba(30,30,30,0.3);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+}
+
+.nextBtn > view{
+  height: 84rpx;
+}
+
+.nextBtn .preStep, .confirmCreate{
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+.nextBtn .preStep {
+  color: #999;
+  position: relative;
+}
+
+.nextBtn .preStep > view{
+  position: absolute;
+  top: 18rpx;
+  width: 3rpx;
+  height: 40rpx;
+  right: 0;
+  background-color: #d2d2d2;
+}
+
+.selectItem {
+  min-height: 886rpx;
+}
+
+.selectItem .title {
+  height: 44rpx;
+  line-height: 44rpx;
+  color: #666;
+  font-size: 26rpx;
+  text-indent: 26rpx;
+}
+
+.selectItem .title span {
+  color: #e32a25;
+  font-size: 30rpx;
+}
+
+.selectItem .selectkind {
+  height: 88rpx;
+  line-height: 88rpx;
+  font-size: 24rpx;
+  color: #919191;
+  background: #e4e7e6;
+}
+
+.selectItem .selectkind > view {
+  width: 50%;
+  height: 88rpx;
+  float: left;
+} 
+
+.selectItem .selectBy {
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #fff;
+  color: #555;
+}
+
+.selectItem .selectBy > view {
+  width: 50%;
+  float: left;
+  font-size: 24rpx;
+  position: relative;
+}
+
+.selectItem .selectBy .quality view{
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 12rpx solid #999;
+  border-left: 8rpx solid transparent;
+  border-right: 8rpx solid transparent;
+  top: 36rpx;
+  right: 118rpx;
+}
+
+.selectItem .selectBy .value view:nth-of-type(1){
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-bottom: 12rpx solid #999;
+  border-top: 0;
+  border-left: 8rpx solid transparent;
+  border-right: 8rpx solid transparent;
+  top: 26rpx;
+  right: 118rpx;
+}
+
+.selectItem .selectBy .value view:nth-of-type(2){
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 12rpx solid #999;
+  border-left: 8rpx solid transparent;
+  border-right: 8rpx solid transparent;
+  top: 44rpx;
+  right: 118rpx;
+}
+
+.selectItem .img {
+  width: 660rpx;
+  margin: 0 auto;
+}
+
+.selectItem .imgItem {
+  width: 154rpx;
+  height: 94rpx;
+  position: relative;
+  margin: 0 10rpx 10rpx 0;
+  float: left;
+}
+
+.selectItem .imgItem:nth-of-type(4n){
+  margin-right: 0;
+}
+
+.selectItem .imgItem image{
+  width: 100%;
+  height: 100%;
+}
+
+.selectItem .imgItem > view:nth-of-type(1) {
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-right: 132rpx solid transparent;
+  border-bottom: 34rpx solid transparent;
+  opacity: .6;
+}
+
+.selectItem .imgItem > view:nth-of-type(2) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 22rpx;
+  color: #fff;
+  text-indent: 4rpx;
+}

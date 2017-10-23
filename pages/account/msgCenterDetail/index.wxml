@@ -1,0 +1,22 @@
+  <view class="common-header textCt color-f">
+    <view class="backBtn" bindtap="goBack"></view>
+    <text>消息中心</text>
+  </view>
+  <view class='msgList'>
+    <view class='msgItem'>
+      <view>您通过 微信支付 充值 <span style="color:#ffb900">5</span>赏金已到账，注意查收。</view>
+      <view>2017-10-09</view>
+    </view>
+    <view class='msgItem'>
+      <view>尊敬的用户，您在10.09 16:00:17绑定了新的邮箱地址：1176620400@qq.com</view>
+      <view>2017-10-09</view>
+    </view>
+    <view class='msgItem'>
+      <view>您的账号于 2017.09.22 17:59:05 在 <span style="color: #ec9b9a">湖南省长沙市</span>登录系统</view>
+      <view>2017-10-09</view>
+    </view>
+    <view class='msgItem'>
+      <view>尊敬的用户，您在10.09 16:00:17绑定了新的邮箱地址：1176620400@qq.com</view>
+      <view>2017-10-09</view>
+    </view>    
+  </view>

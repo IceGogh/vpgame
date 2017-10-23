@@ -1,0 +1,38 @@
+  <view class="common-header textCt color-f">
+    <view class="backBtn" bindtap="goBack"></view>
+    <text>常见问题</text>
+  </view>
+  <view class='proItem'>
+    <view>
+      <view class='iconBg'></view>
+      <view class='pro'>游戏饰品</view>
+    </view>
+    <view>
+      <view class='iconBg'></view>
+      <view class='pro'>赏金制度</view>
+    </view>
+    <view>
+      <view class='iconBg'></view>
+      <view class='pro'>等级提升</view>
+    </view>
+    <view>
+      <view class='iconBg'></view>
+      <view class='pro'>赔付机制</view>
+    </view>
+    <view>
+      <view class='iconBg'></view>
+      <view class='pro'>推广有奖</view>
+    </view>
+    <view>
+      <view class='iconBg'></view>
+      <view class='pro'>VIPGame</view>
+    </view>
+    <view>
+      <view class='iconBg'></view>
+      <view class='pro'>竞猜需知</view>
+    </view>
+    <view>
+      <view class='iconBg'></view>
+      <view class='pro'>常见问题</view>
+    </view>
+  </view>

@@ -5,7 +5,56 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    swiperPage: 0,
+    roomImg : [
+      [
+        "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005A1O.png",
+        "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005A1O.png",
+        "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005A1O.png",
+        "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170316/X0005GBU.png"
+      ]
+    ]
+  },
+
+  // 滑动时 双向绑定 根据 current值 改变 swiperPage (周数据/总数据)
+  swiperData: function (e) {
+    var val = e.detail.current;
+    this.setData({
+      swiperPage: val
+    });
+    console.log(this.data.swiperPage)
+  },
+
+  switch0: function () {
+    if (this.data.swiperPage != 0) {
+      this.setData({
+        swiperPage: 0
+      })
+    }
+  },
+
+  switch1: function () {
+    if (this.data.swiperPage != 1) {
+      this.setData({
+        swiperPage: 1
+      })
+    }
+  },
+
+  switch2: function () {
+    if (this.data.swiperPage != 2) {
+      this.setData({
+        swiperPage: 2
+      })
+    }
+  },
+
+  switch3: function () {
+    if (this.data.swiperPage != 3) {
+      this.setData({
+        swiperPage: 3
+      })
+    }
   },
 
   /**

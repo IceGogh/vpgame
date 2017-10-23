@@ -11,6 +11,7 @@ Page({
       ["收支类型", "碎银渠道", "时间"],
       ["充值渠道", "", "时间"]
     ],
+
     selectWd : [
       [
         ["全部", "收入", "支出"],
@@ -102,6 +103,19 @@ Page({
         "data": "-3"
       },
     ],
+    JSON : {
+      "s00" : 0,
+      "s01" : 0
+    },
+    s00: 0,
+    s01: 0,
+    s02: 0,
+    s10: 0,
+    s11: 0,
+    s12: 0,
+    s20: 0,
+    s22: 0,
+
     assetKind : 0
   },
 
@@ -140,14 +154,19 @@ Page({
 
   // 选择 condition
   selectCondition : function(e){
-    let condiFir = Math.ceil(e.target.dataset.condipre/3) -1 
-      , condiPre = e.target.dataset.condipre -1
-      , condi = e.target.dataset.condi;
-    console.log(condiFir)
-    console.log(condiPre)
-    console.log(condi )
+    console.log(e.target.dataset);
+    var Inx = e.target.dataset.indexThird;
+    this.setData({
+    
+    })
 
   },
+
+  // 页面后退
+  goBack: function (ops) {
+    wx.navigateBack();
+  },
+  
   /**
    * 生命周期函数--监听页面加载
    */

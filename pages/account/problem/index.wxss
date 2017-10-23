@@ -1,0 +1,62 @@
+.proItem {
+  width: 96%;
+  margin: 84rpx auto 0;
+}
+
+.proItem > view {
+  box-sizing: border-box;
+  width: 33.33%;
+  height: 256rpx;
+  border-right: 2rpx solid #dfdfdf;
+  border-bottom: 2rpx solid #dfdfdf;
+  color: #a5a5a5;
+  float: left;
+}
+
+.proItem > view:nth-of-type(3n){
+  border-right: 0;
+}
+
+.proItem .iconBg {
+  width: 84rpx;
+  height: 84rpx;
+  margin: 70rpx 0 0 78rpx;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 84rpx;
+}
+
+.proItem >view:nth-of-type(1) .iconBg{
+  background-image: url(https://match.vipgame.com/files/171007/X0002KRV.png)
+}
+
+.proItem >view:nth-of-type(2) .iconBg{
+  background-image: url(https://match.vipgame.com/files/171007/X0002KRW.png)
+}
+.proItem >view:nth-of-type(3) .iconBg{
+  background-image: url(https://match.vipgame.com/files/171007/X0002KRX.png)
+}
+.proItem >view:nth-of-type(4) .iconBg{
+  background-image: url(https://match.vipgame.com/files/171007/X0002KRY.png)
+}
+.proItem >view:nth-of-type(5) .iconBg{
+  background-image: url(https://match.vipgame.com/files/171007/X0002KS0.png)
+}
+.proItem >view:nth-of-type(6) .iconBg{
+  background-image: url(https://match.vipgame.com/files/171007/X0002KS1.png)
+}
+.proItem >view:nth-of-type(7) .iconBg{
+  background-image: url(https://match.vipgame.com/files/171007/X0002KRU.png)
+}
+.proItem >view:nth-of-type(8) .iconBg{
+  background-image: url(https://match.vipgame.com/files/171007/X0002KRZ.png)
+}
+
+.proItem .pro{
+  color: #a5a5a5;
+  font-size: 24rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  margin-top: 20rpx;
+  text-align: center;
+}

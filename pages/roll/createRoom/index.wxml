@@ -1,0 +1,104 @@
+  <view class="common-header textCt color-f">
+    <view class="backBtn" bindtap="goBack"></view>
+    <text>创建ROLL</text>
+  </view>
+
+<!-- 创建房间信息  -->
+
+  <view class='createInfo' hidden="{{createStep == 1 ? false : true}}">
+    <view class='info'>
+      <image src='https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/171009/X00068F9.jpg'></image>
+      <view>
+        <view class='name'>黑土heytoo</view>
+        <view class='level textCt'>渐入佳境</view>
+      </view>
+    </view>
+    <view class='note'>
+      <view>房间备注</view>
+      <textarea></textarea>
+    </view>
+    <view class='set'>
+      <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+         选择日期:
+         <view class="date"> 
+          {{date}} 
+         </view> 
+      </picker>
+      <picker mode="time" value="{{time}}" start="00:00" end="23:59" bindchange="bindTimeChange">
+         选择时间:
+         <view class="time"> 
+          {{time}} 
+         </view> 
+      </picker>
+      <view>
+        人数上限:
+        <input type='nubmer'></input>
+      </view>
+      <view>
+        中奖人数:
+        <input type='nubmer'></input>
+      </view>
+      <view>
+        房间密码:
+        <input type='password'></input>
+      </view>
+      <view>
+        微博地址:
+        <input type='text'></input>
+      </view>
+      <view>
+        直播地址:
+        <input type='text'></input>
+      </view>
+    </view>
+  </view>
+
+  <!-- 下一步  -->
+  <view class='nextBtn'>
+    <view class='next textCt' hidden="{{createStep == 1 ? false : true}}" bindtap='nextStep'>
+      下一步
+    </view>
+    <view  hidden="{{createStep == 2 ? false : true}}">
+      <view class='preStep' bindtap='prevStep'>上一步
+        <view></view>
+      </view>
+      <view class='confirmCreate'>确定创建</view>
+    </view>
+  </view>
+
+  <!-- 创建room  step2 选择饰品  -->
+  <view class='selectItem'  hidden="{{createStep == 2 ? false : true}}">
+    <view class='title'>
+        已选ROLL饰品(共
+        <span>0</span>
+        件, 价值
+        <span>$0</span>
+        )
+    </view>
+    <view class='selectkind'>
+      <view class='textCt'>
+        DOTA2饰品
+      </view>
+      <view class='textCt'>
+        CSGO饰品
+      </view>
+    </view>
+    <view class='selectBy'>
+      <view class='quality textCt'>
+        品质
+        <view></view>
+      </view>
+      <view class='value textCt'>
+        价值
+        <view></view>
+        <view></view>
+      </view>
+    </view>
+     <view class='img clearFloat'>
+      <view class='imgItem' wx:for="{{imgData}}">
+        <image src="{{item.img}}"></image>
+        <view style="border-bottom-color:{{item.valColor}}"></view>
+        <view>${{item.val}} </view>
+      </view>
+    </view> 
+  </view>

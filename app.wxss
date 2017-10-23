@@ -35,10 +35,10 @@ page {
   position: fixed;
   top: 0;
   left: 0;
-  opacity : 0.5;
+  opacity : 0.5; 
   font-size: 28rpx;
   z-index : 100;
-  background: #222324;
+  background-color: #222;
 }
 
 .width94 {
