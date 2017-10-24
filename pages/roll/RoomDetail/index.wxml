@@ -1,0 +1,45 @@
+  <view class="common-header textCt color-f">
+    <view class="backBtn" bindtap="goBack"></view>
+    <text>官方ROLL</text>
+  </view>
+  <view class='wrapBox marT'>
+    <view class='title'>
+      <view>
+        <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/171009/X00068F9.jpg"></image>
+      </view>
+      <view>
+        <view>黑土heh</view>
+        <view class='roomNub'>房间号: 105190</view>
+      </view>
+    </view>
+    <view class='link'>
+      <!-- 我的创建  -->
+      <view class='myLink'>
+        <view class='roomDetail'>
+          修改信息
+        </view>
+        <view class='rightNow'>
+          立即开奖
+        </view>
+      </view>
+    </view>
+    <view class='note'>
+      <span>截止时间 :　</span>
+      <text>2017/10/24 01:01</text>
+    </view>
+  </view>
+  <view class='wrapBox'>
+    <view class='topLine'>
+      <view>
+        奖品池(共<span>3</span>件,价值<span>$1.79</span>)
+      </view>
+      <view>
+        中奖人数<span>1</span>人
+      </view>
+    </view>
+    <view class='img'>
+      <view class='imgBg'>
+        <image src="https://vip-t-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X00058NX.png"></image>
+      </view>
+    </view>
+  </view>

@@ -131,7 +131,7 @@ page {
 
 .nextBtn .preStep > view{
   position: absolute;
-  top: 18rpx;
+  top: 22rpx;
   width: 3rpx;
   height: 40rpx;
   right: 0;
@@ -257,4 +257,18 @@ page {
   font-size: 22rpx;
   color: #fff;
   text-indent: 4rpx;
+}
+
+.imgItem .tap {
+  position: absolute;
+  width: 154rpx;
+  height: 94rpx;
+  z-index: 500;
+  background-color: rgba(10, 10, 10, .4);
+  top: 0;
+  left: 0;
+  background-image: url(https://account.steampp.com/mobile/static/global/bag.images/suo.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 38rpx;
 }

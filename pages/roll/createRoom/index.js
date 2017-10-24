@@ -8,6 +8,7 @@ Page({
     date: '',
     time : '',
     createStep : 1,
+    selectItemArray : [],
     imgData : [
       {
         "img": "http://vip-t-account.oss-cn-hangzhou.aliyuncs.com/files/170314/X00057BL.png",
@@ -100,6 +101,16 @@ Page({
     this.setData({
       createStep: 1
     })
+  },
+
+  // 选择饰品
+  selectItem : function(e){
+    var ind = e.currentTarget.dataset.ind;
+    var arr = this.data.selectItemArray;
+    arr[ind] = !arr[ind];
+    this.setData({
+      selectItemArray : arr
+    })    
   },
 
   /**

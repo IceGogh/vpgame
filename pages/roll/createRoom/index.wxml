@@ -95,10 +95,12 @@
       </view>
     </view>
      <view class='img clearFloat'>
-      <view class='imgItem' wx:for="{{imgData}}">
+      <view class='imgItem' wx:for="{{imgData}}"  data-ind="{{index}}"  bindtap='selectItem'>
         <image src="{{item.img}}"></image>
         <view style="border-bottom-color:{{item.valColor}}"></view>
-        <view>${{item.val}} </view>
+         
+        <view><!-- $ 后台输出-->{{item.val}} </view> 
+        <view class='tap'  hidden="{{!selectItemArray[index]}}"></view>
       </view>
     </view> 
   </view>

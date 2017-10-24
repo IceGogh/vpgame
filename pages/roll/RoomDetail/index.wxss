@@ -1,0 +1,90 @@
+.wrapBox {
+  width: 680rpx;
+  padding: 14rpx;
+  box-shadow: 0 0 1.4rpx rgba(20,20,20,.3);
+  margin: 26rpx auto;
+  background: #fff;
+  border-radius: 14rpx;
+}
+
+.marT {
+  margin-top: 100rpx;
+}
+.wrapBox .title {
+  height: 72rpx;
+  font-size: 28rpx;
+  color: #555;
+  padding-bottom: 14rpx;
+  border-bottom: 1.4rpx solid #eee;
+}
+
+.wrapBox .title > view {
+  float: left;
+}
+
+.wrapBox .title >  view:nth-child(1) {
+  margin: 0 20rpx 0 ;
+}
+
+.wrapBox .title image {
+  width: 72rpx;
+  height: 72rpx;
+  border-radius: 50%;
+}
+
+.wrapBox .title :nth-child(2) {
+  height: 72rpx;
+}
+
+.wrapBox .title :nth-child(2) view {
+  height: 36rpx;
+  line-height: 36rpx;
+}
+
+.wrapBox .title .roomNub {
+  font-size: 22rpx;
+  color: #999;
+}
+
+.myLink {
+  height: 82rpx;
+  padding-top: 40rpx;
+  display: flex;
+  justify-content: space-around;
+}
+
+.myLink > view {
+  width: 300rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  text-align: center;
+  font-size: 26rpx;
+  border-radius: 6rpx;
+  border: 1.4rpx #50bfff solid;
+  float: left;
+}
+
+.myLink .roomDetail {
+  color: #50bfff;
+}
+
+.myLink .rightNow {
+  color: #fff;
+  border-color: #ee7142;
+  background-color: #ee7142;
+}
+
+.wrapBox .note {
+  height: 36rpx;
+  line-height: 36rpx;
+  padding-left: 14rpx;
+  font-size: 24rpx;
+}
+
+.wrapBox .note span {
+  letter-spacing: 4rpx;
+  color: #999;
+}
+.wrapBox .note text {
+  color: #ee7142;
+}
