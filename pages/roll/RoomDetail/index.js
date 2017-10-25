@@ -5,14 +5,50 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    imgData: [
+      { "url": "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170314/X00056KA.png" },
+      { "url": "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170314/X00056KA.png" }
+    ],
+
+    playerList : [
+      {
+        "photo": "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/171012/X00068HU.png",
+        "name": "vipgame用户"
+      },
+      {
+        "photo": "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/171012/X00068HU.png",
+        "name": "vipgame用户"
+      },
+      {
+        "photo": "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/171012/X00068HU.png",
+        "name": "vipgame用户"
+      },
+      {
+        "photo": "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170801/X0005WW5.png",
+        "name": "2博导收菜"
+      },
+      {
+        "photo": "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/171012/X00068HU.png",
+        "name": "博导收菜"
+      },
+      {
+        "photo": "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170801/X0005WW5.png",
+        "name": "vipgame用户"
+      },
+      {
+        "photo": "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/171012/X00068HU.png",
+        "name": "博导收菜"
+      }
+
+    ]
+   
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+
   },
 
   /**
@@ -26,7 +62,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    
   },
 
   /**

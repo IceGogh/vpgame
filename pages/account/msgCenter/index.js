@@ -68,4 +68,11 @@ Page({
   goBack: function (ops) {
     wx.navigateBack();
   },
+
+  // 消息详情
+  toMsgCenterDetail : function(){
+    wx.navigateTo({
+      url : '../msgCenterDetail/index'
+    })
+  }
 })

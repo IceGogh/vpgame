@@ -11,6 +11,10 @@ Page({
         "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005A1O.png",
         "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005A1O.png",
         "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005A1O.png",
+        "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005A1O.png",
+        "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005A1O.png",
+        "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005A1O.png",
+        "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005A1O.png",
         "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170316/X0005GBU.png"
       ]
     ]

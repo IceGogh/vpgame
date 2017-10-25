@@ -3,7 +3,7 @@
     <text>消息中心</text>
   </view>
   <view class='msgList'>
-    <view class='msgItem account'>
+    <view class='msgItem account' bindtap='toMsgCenterDetail'>
       <view></view>
       <view>
         <view>
@@ -17,7 +17,7 @@
         04:55
       </view>
     </view>
-    <view class='msgItem VIP'>
+    <view class='msgItem VIP' bindtap='toMsgCenterDetail'>
       <view></view>
       <view>
         <view>VIP特权</view>
@@ -29,7 +29,7 @@
         10:22
       </view>
     </view>
-    <view class='msgItem match'>
+    <view class='msgItem match' bindtap='toMsgCenterDetail'>
       <view></view>
       <view>
         <view>竞猜中心</view>
@@ -41,7 +41,7 @@
         09:56
       </view>
     </view>
-    <view class='msgItem roll'>
+    <view class='msgItem roll' bindtap='toMsgCenterDetail'>
       <view></view>
       <view>
         <view>ROLL</view>

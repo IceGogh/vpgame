@@ -22,24 +22,79 @@
           立即开奖
         </view>
       </view>
+
+      <!-- 我的参加  -->
+      <view class='myJoin'>
+        <view class='enterOnline'>
+          进入直播
+        </view>
+        <view class='enterWeibo'>
+          进入微博
+        </view>
+        <view class='joinNow'>
+          立即参加
+        </view>
+      </view>
     </view>
     <view class='note'>
       <span>截止时间 :　</span>
       <text>2017/10/24 01:01</text>
     </view>
   </view>
+
+
+
   <view class='wrapBox'>
     <view class='topLine'>
-      <view>
+      <view class='overfl'>
         奖品池(共<span>3</span>件,价值<span>$1.79</span>)
       </view>
-      <view>
+      <view class='overfl'>
         中奖人数<span>1</span>人
       </view>
     </view>
-    <view class='img'>
-      <view class='imgBg'>
-        <image src="https://vip-t-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X00058NX.png"></image>
+    <view class='img clearFloat'>
+      <view class='imgBg' wx:for="{{imgData}}" data-cc="{{imgData.length%4}}">
+        <image src="{{item['url']}}" ></image>
+      </view>
+
+      <!-- 当条目小于4时,  补全  -->
+      <block wx:if="{{imgData.length < 4 && imgData.length%4 == 1}}">
+        <view class='imgBg'>
+          <image src="https://roll.vipgame.com/mobile/static/roll/images/rollmo.jpg"></image>
+        </view>
+        <view class='imgBg'>
+          <image src="https://roll.vipgame.com/mobile/static/roll/images/rollmo.jpg"></image>
+        </view>
+        <view class='imgBg'>
+          <image src="https://roll.vipgame.com/mobile/static/roll/images/rollmo.jpg"></image>
+        </view>
+      </block>
+      <block wx:if="{{imgData.length < 4 && imgData.length%4 == 2}}">
+        <view class='imgBg'>
+          <image src="https://roll.vipgame.com/mobile/static/roll/images/rollmo.jpg"></image>
+        </view>
+        <view class='imgBg'>
+          <image src="https://roll.vipgame.com/mobile/static/roll/images/rollmo.jpg"></image>
+        </view>
+      </block>
+      <block wx:if="{{imgData.length < 4 && imgData.length%4 == 3}}">
+        <view class='imgBg'>
+          <image src="https://roll.vipgame.com/mobile/static/roll/images/rollmo.jpg"></image>
+        </view>
+      </block>
+    </view>
+  </view>
+
+
+  <view class='wrapBox'>
+    <view class='topLine'>
+      参与玩家(17/100)
+    </view>
+    <view class='clearFloat'>
+      <view class='player' wx:for="{{playerList}}">
+        <image src="{{item['photo']}}"></image>
+        <view class='overfl'>{{item['name']}}</view>
       </view>
     </view>
   </view>

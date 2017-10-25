@@ -46,7 +46,7 @@
   color: #999;
 }
 
-.myLink {
+.myLink, .myJoin {
   height: 82rpx;
   padding-top: 40rpx;
   display: flex;
@@ -74,6 +74,33 @@
   background-color: #ee7142;
 }
 
+.myJoin > view {
+  width: 196rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  background-position: 10rpx center;
+  background-repeat: no-repeat;
+  background-size: 28rpx;
+  color: #999;
+  border: 1.4rpx #999 solid;
+  border-radius: 8rpx;
+  font-size: 26rpx;
+  text-align: center;
+}
+
+.myJoin .enterOnline {
+  background-image: url(https://roll.steampp.com/mobile/static/roll/images/link_act_nohref.png);
+}
+.myJoin .enterWeibo {
+  background-image: url(https://roll.steampp.com/mobile/static/roll/images/link_vb_nohref.png);
+}
+.myJoin .joinNow {
+  background-color: #ee7142;
+  color: #fff;
+  border-color: #ee7142;
+}
+
+
 .wrapBox .note {
   height: 36rpx;
   line-height: 36rpx;
@@ -87,4 +114,65 @@
 }
 .wrapBox .note text {
   color: #ee7142;
+}
+
+.topLine {
+  height: 40rpx;
+  line-height: 40rpx;
+  color: #555;
+  font-size: 25rpx;
+  padding-left: 14rpx;
+  margin-bottom: 10rpx;
+}
+
+.topLine span {
+  color: #e32a25;
+}
+
+.topLine view:nth-child(1){
+  max-width: 60%;
+  float: left;
+}
+
+.topLine view:nth-child(2){
+  float: right;
+  max-width: 30%;
+  margin-right: 14rpx;
+}
+
+.img .imgBg {
+  width: 158rpx;
+  height: 98rpx;
+  float: left;
+  margin: 0 4rpx 8rpx;
+  background: url(https://vip-roll.oss-cn-hangzhou.aliyuncs.com/mobile/static/roll/images/csgo_info_bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.img .imgBg image{
+  width: 100%;
+  height: 100%;
+}
+
+.player {
+  width: 84rpx;
+  height: 148rpx;
+  float: left;
+  margin: 0 14rpx; 
+}
+
+.player image{
+  border-radius: 50%;
+  width: 100%;
+  height: 84rpx;
+}
+
+.player view{
+  width: 84rpx;
+  height: 32rpx;
+  line-height: 32rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 24rpx;
+  color: #999;
 }

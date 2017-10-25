@@ -28,7 +28,7 @@
         <view class='overfl'>小菠菜们的回血ROLL房，赛事多，活动经常会有！</view>
         <view>房间号: 5867</view>
       </view>
-      <view class='img'>
+      <view class='img clearFloat'>
         <view wx:for="{{roomImg[0]}}">
           <image src='{{item}}'></image>
         </view>
@@ -62,7 +62,7 @@
         <view class='overfl'>小菠菜们的回血ROLL房，赛事多，活动经常会有！</view>
         <view>房间号: 5867</view>
       </view>
-      <view class='img'>
+      <view class='img clearFloat'>
         <view wx:for="{{roomImg[0]}}">
           <image src='{{item}}'></image>
         </view>
@@ -96,7 +96,7 @@
         <view class='overfl'>小菠菜们的回血ROLL房，赛事多，活动经常会有！</view>
         <view>房间号: 5867</view>
       </view>
-      <view class='img'>
+      <view class='img clearFloat'>
         <view wx:for="{{roomImg[0]}}">
           <image src='{{item}}'></image>
         </view>
@@ -134,7 +134,7 @@
         <view class='overfl'>小菠菜们的回血ROLL房，赛事多，活动经常会有！</view>
         <view>房间号: 5867</view>
       </view>
-      <view class='img'>
+      <view class='img clearFloat'>
         <view wx:for="{{roomImg[0]}}">
           <image src='{{item}}'></image>
         </view>
