@@ -6,6 +6,17 @@ page {
   opacity : 1;
 }
 
+.cancleCreate {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 107rpx;
+  height: 84rpx;
+  line-height: 84rpx;
+  font-size: 24rpx;
+  color: #b9becd;
+}
+
 .createInfo, .selectItem {
   width: 692rpx;
   margin: 96rpx auto 0;
@@ -148,6 +159,7 @@ page {
   color: #666;
   font-size: 26rpx;
   text-indent: 26rpx;
+  margin-bottom: 10rpx;
 }
 
 .selectItem .title span {
@@ -169,11 +181,30 @@ page {
   float: left;
 } 
 
+.selectItem .selectkind .selectedColor {
+  color: #ee7142;
+  font-weight: bold;
+  position: relative;
+}
+
+.selectItem .selectkind .selectedColor:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 44%;
+  width: 0;
+  height: 0;
+  border-bottom: 22rpx #fff solid;
+  border-left: 16rpx solid transparent;
+  border-right: 16rpx solid transparent;
+}
+
 .selectItem .selectBy {
   height: 80rpx;
   line-height: 80rpx;
   background: #fff;
   color: #555;
+  position: relative;
 }
 
 .selectItem .selectBy > view {
@@ -192,6 +223,16 @@ page {
   border-right: 8rpx solid transparent;
   top: 36rpx;
   right: 118rpx;
+}
+
+.selectItem .selectBy .selectQuality {
+  color: #ee7142;
+}
+
+.selectItem .selectBy .selectQuality view{
+  transition: all .4s;
+  border-top-color: #ee7142;
+  transform: rotate(180deg);
 }
 
 .selectItem .selectBy .value view:nth-of-type(1){
@@ -216,6 +257,66 @@ page {
   top: 44rpx;
   right: 118rpx;
 }
+
+.selectItem .selectBy .selForm {
+  position: absolute;
+  top: 80rpx;
+  left: 0;
+  width: 692rpx;
+  background:#fff;
+  z-index: 300;
+}
+
+.selectItem .selectBy .selForm > view {
+  height: 68rpx;
+  border-bottom: 1.4rpx #eee solid;
+}
+
+.selectItem .selectBy .selForm .selClass {
+  height: 68rpx;
+  line-height: 68rpx;
+  width: 96%;
+  margin: 0 auto;
+  text-indent: 48rpx;
+  position: relative;
+}
+
+.selectItem .selectBy .selForm .selBg{
+background: url(https://vip-account.oss-cn-hangzhou.aliyuncs.com/mobile/static/account/My_bag/images/queren.png) no-repeat 600rpx;
+background-size: 28rpx;
+}
+  
+    
+  
+.selectItem .selectBy .selForm .leftDot {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 38rpx solid red;
+  border-bottom: 34rpx solid transparent;
+  z-index: 300;
+  top: 0;
+  left: 0;
+}
+
+.selectItem .noImg view {
+  color: #999;
+  font-size: 24rpx;
+  text-align: center;
+  line-height: 50rpx;
+}
+
+.selectItem .noImg view:nth-child(1) {
+  color: #fff;
+  background: #ee7142;
+  width: 240rpx;
+  margin: 180rpx auto 10rpx;
+  height: 66rpx;
+  line-height: 66rpx;
+  border-radius: 36rpx;
+  font-size: 26rpx;
+}
+
 
 .selectItem .img {
   width: 660rpx;

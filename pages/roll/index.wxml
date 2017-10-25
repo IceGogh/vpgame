@@ -3,7 +3,7 @@
     <input type='number'></input>
     <view></view>
   </view>
-  <view class='create'></view>
+  <view class='create' bindtap='createRoom'></view>
 </view>
 <view class='rollMask'>
   <view class='{{swiperPage == 0 ? "active" : ""}}' bindtap='switch0'>
@@ -32,6 +32,14 @@
         <view wx:for="{{roomImg[0]}}">
           <image src='{{item}}'></image>
         </view>
+        <view class='imgNub'>
+          +199
+        </view>
+        <block wx:if="{{roomImgCheck}}">
+          <view>
+            <image src='https://roll.vipgame.com/mobile/static/roll/images/rollmo.jpg'></image>
+          </view>
+        </block>
       </view>
       <view class='info'>
         <view>
@@ -66,6 +74,14 @@
         <view wx:for="{{roomImg[0]}}">
           <image src='{{item}}'></image>
         </view>
+        <view class='imgNub'>
+          +199
+        </view>
+        <block wx:if="{{roomImgCheck}}">
+          <view>
+            <image src='https://roll.vipgame.com/mobile/static/roll/images/rollmo.jpg'></image>
+          </view>
+        </block>
       </view>
       <view class='info'>
         <view>
@@ -100,6 +116,14 @@
         <view wx:for="{{roomImg[0]}}">
           <image src='{{item}}'></image>
         </view>
+        <view class='imgNub'>
+          +199
+        </view>
+        <block wx:if="{{roomImgCheck}}">
+          <view>
+            <image src='https://roll.vipgame.com/mobile/static/roll/images/rollmo.jpg'></image>
+          </view>
+        </block>
       </view>
       <view class='info'>
         <view>

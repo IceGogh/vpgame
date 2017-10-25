@@ -1,6 +1,7 @@
   <view class="common-header textCt color-f">
     <view class="backBtn" bindtap="goBack"></view>
     <text>创建ROLL</text>
+    <view class='cancleCreate' bindtap='goBack'>取消</view>
   </view>
 
 <!-- 创建房间信息  -->
@@ -76,15 +77,15 @@
         )
     </view>
     <view class='selectkind'>
-      <view class='textCt'>
+      <view class='textCt {{ DotaOrCsgo == 0 ? "selectedColor" : ""}}' bindtap='selDota'>
         DOTA2饰品
       </view>
-      <view class='textCt'>
+      <view class='textCt {{ DotaOrCsgo == 1 ? "selectedColor" : ""}}' bindtap='selCsgo'>
         CSGO饰品
       </view>
     </view>
     <view class='selectBy'>
-      <view class='quality textCt'>
+      <view class='quality textCt {{ !QualityList ? "selectQuality" : ""}}' bindtap='slcQuality'>
         品质
         <view></view>
       </view>
@@ -93,14 +94,67 @@
         <view></view>
         <view></view>
       </view>
-    </view>
-     <view class='img clearFloat'>
-      <view class='imgItem' wx:for="{{imgData}}"  data-ind="{{index}}"  bindtap='selectItem'>
-        <image src="{{item.img}}"></image>
-        <view style="border-bottom-color:{{item.valColor}}"></view>
-         
-        <view><!-- $ 后台输出-->{{item.val}} </view> 
-        <view class='tap'  hidden="{{!selectItemArray[index]}}"></view>
+
+      <!-- 选择饰品品质等级  -->
+      <view class='selForm' hidden="{{QualityList}}">
+        <view>
+          <view class='selClass selBg'>
+            不限
+            <view class='leftDot'></view>  
+          </view>
+        </view>
+        <view>
+          <view class='selClass'>
+            普通
+            <view class='leftDot'></view>  
+          </view>
+        </view>
+        <view>
+          <view class='selClass'>
+            神话
+            <view class='leftDot'></view>  
+          </view>
+        </view>
+        <view>
+          <view class='selClass'>
+            不朽
+            <view class='leftDot'></view>  
+          </view>
+        </view>
       </view>
-    </view> 
+    </view>
+
+    <!-- 饰品列表  -->
+    <swiper current="{{DotaOrCsgo}}" bindchange='switchDotaOrCsgo'>
+      <swiper-item>
+        <view class='img clearFloat'>
+          <view class='imgItem' wx:for="{{imgData}}"  data-ind="{{index}}"  bindtap='selectItem'>
+            <image src="{{item.img}}"></image>
+            <view style="border-bottom-color:{{item.valColor}}"></view>
+            
+            <view><!-- '$' 后台输出-->{{item.val}} </view> 
+            <view class='tap'  hidden="{{!selectItemArray[index]}}"></view>
+          </view>
+        </view> 
+      </swiper-item>
+      <swiper-item>
+        <view class='img clearFloat'>
+          <view class='imgItem' wx:for="{{imgData}}"  data-ind="{{index}}"  bindtap='selectItem'>
+            <image src="{{item.img}}"></image>
+            <view style="border-bottom-color:{{item.valColor}}"></view>
+            
+            <view><!-- '$' 后台输出-->{{item.val}} </view> 
+            <view class='tap'  hidden="{{!selectItemArray[index]}}"></view>
+          </view>
+        </view> 
+      </swiper-item>
+    </swiper>
+
+
+    <!-- 饰品为空时  -->
+    <view class='noImg'>
+      <view>存入</view>
+      <view>您的VIP背包中没有任何饰品</view>
+      <view>请从STEAM库存存入到VIP背包</view>
+    </view>
   </view>

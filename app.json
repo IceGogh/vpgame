@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/roll/RoomDetail/index",
+    
     "pages/match/index",
     "pages/account/myBag/index",
     "pages/roll/index",
@@ -19,7 +19,8 @@
     "pages/account/msgCenter/index",
     "pages/account/msgCenterDetail/index",
     "pages/account/problem/index",
-    "pages/roll/createRoom/index"
+    "pages/roll/createRoom/index",
+    "pages/roll/RoomDetail/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -33,7 +34,7 @@
     "borderStyle": "black",
     "list": [
       {
-        "pagePath": "pages/roll/RoomDetail/index",
+        "pagePath": "pages/match/index",
         "iconPath": "static/image/foot_detail.png",
         "selectedIconPath": "static/image/foot_detail_hover.png",
         "text": "竞猜",

@@ -11,13 +11,10 @@ Page({
         "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005A1O.png",
         "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005A1O.png",
         "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005A1O.png",
-        "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005A1O.png",
-        "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005A1O.png",
-        "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005A1O.png",
-        "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170315/X0005A1O.png",
-        "https://vip-account.oss-cn-hangzhou.aliyuncs.com/files/170316/X0005GBU.png"
+        "https://roll.vipgame.com/mobile/static/roll/images/more.jpg"
       ]
-    ]
+    ],
+    roomImgCheck : false
   },
 
   // 滑动时 双向绑定 根据 current值 改变 swiperPage (周数据/总数据)
@@ -59,6 +56,13 @@ Page({
         swiperPage: 3
       })
     }
+  },
+
+  // 创建房间
+  createRoom : function(){
+    wx.navigateTo({
+      url : "createRoom/index"
+    })
   },
 
   /**

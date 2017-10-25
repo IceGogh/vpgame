@@ -9,6 +9,8 @@ Page({
     time : '',
     createStep : 1,
     selectItemArray : [],
+    DotaOrCsgo : 0,
+    QualityList : true,
     imgData : [
       {
         "img": "http://vip-t-account.oss-cn-hangzhou.aliyuncs.com/files/170314/X00057BL.png",
@@ -97,10 +99,36 @@ Page({
 
   // 上一步
   prevStep: function () {
-
     this.setData({
       createStep: 1
     })
+  },
+
+  // 选择 DOTA2 或者 GSGO饰品分类 switchDotaOrCsgo
+  switchDotaOrCsgo : function(e){
+    var key = e.detail.current
+    this.setData({
+      DotaOrCsgo : key
+    })
+  },
+
+  selDota: function () {
+    this.setData({
+      DotaOrCsgo: 0
+    })
+  },
+
+  selCsgo : function () {
+    this.setData({
+      DotaOrCsgo: 1
+    })
+  },
+
+  // 品质分级选择
+  slcQuality : function(){
+    this.setData({
+      QualityList: !this.data.QualityList
+    })    
   },
 
   // 选择饰品
@@ -113,6 +141,10 @@ Page({
     })    
   },
 
+  // 页面后退
+  goBack: function (ops) {
+    wx.navigateBack();
+  },
   /**
    * 生命周期函数--监听页面加载
    */
