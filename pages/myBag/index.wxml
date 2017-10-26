@@ -93,3 +93,4 @@
       <view>请从STEAM库存存入到VIP背包</view>
     </view>
   </view>
+  <view class='actionBar textCt'>取出</view>

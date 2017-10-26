@@ -252,3 +252,16 @@ scroll-view{
   background-repeat: no-repeat;
   background-size: 38rpx;
 }
+
+.actionBar {
+  width: 100%;
+  height: 84rpx;
+  line-height: 84rpx;
+  background: #fff;
+  color: #ee7142;
+  font-size: 26rpx;
+  position: fixed;
+  bottom: 10rpx;
+  left: 0;
+  border-bottom: 1.4rpx solid #f0f0f0;
+}
