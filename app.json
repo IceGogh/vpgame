@@ -2,7 +2,7 @@
   "pages": [
     
     "pages/match/index",
-    "pages/account/myBag/index",
+    "pages/myBag/index",
     "pages/roll/index",
     "pages/account/index",
     "pages/account/accountSetting/index",
@@ -41,7 +41,7 @@
         "backgroundColor": "green"
       },
       {
-        "pagePath": "pages/account/myBag/index",
+        "pagePath": "pages/myBag/index",
         "iconPath": "static/image/foot_bag.png",
         "selectedIconPath": "static/image/foot_bag_hover.png",
         "text": "背包"
