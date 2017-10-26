@@ -14,16 +14,17 @@ Page({
         "https://roll.vipgame.com/mobile/static/roll/images/more.jpg"
       ]
     ],
-    roomImgCheck : false
+    roomImglist : [],
+    playerDataArr : [],
+    roomImgCheck : false,
   },
-
+  
   // 滑动时 双向绑定 根据 current值 改变 swiperPage (周数据/总数据)
   swiperData: function (e) {
     var val = e.detail.current;
     this.setData({
       swiperPage: val
     });
-    console.log(this.data.swiperPage)
   },
 
   switch0: function () {
@@ -69,7 +70,23 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    var that = this
+      , arr = [];
+    wx.request({
+      url: 'https://roll.vipgame.com/m/server/getList?page=1',
+      success: function (res) {
+        for (var i in res.data[0].content){
+          arr.push(i)
+        }
+        that.setData({
+          playerDataArr : arr,
+          roomImglist: res.data[0].content
+        });
+
+        console.log(that.data.playerDataArr)
+        console.log(that.data.roomImglist)
+      }
+    });
   },
 
   /**

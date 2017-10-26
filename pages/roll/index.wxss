@@ -151,6 +151,7 @@ swiper-item:nth-of-type(1) {
 .room .title image {
   width: 84rpx;
   height: 84rpx;
+  border-radius: 50%;
   float: left;
 }
 
@@ -185,6 +186,10 @@ swiper-item:nth-of-type(1) {
   height: 98rpx;
   background: url(https://vip-roll.oss-cn-hangzhou.aliyuncs.com/mobile/static/roll/images/csgo_info_bg.jpg) no-repeat center center;
   background-size: 158rpx;
+}
+
+.room .img .nullBg {
+  background-image: none;
 }
 
 .room .img image {
