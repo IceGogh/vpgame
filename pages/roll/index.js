@@ -73,10 +73,14 @@ Page({
     var that = this
       , arr = [];
     wx.request({
-      url: 'https://roll.vipgame.com/m/server/getList?page=1',
+      url: 'https://roll.vipgame.com/m/server/getList?page=3',
       success: function (res) {
-        for (var i in res.data[0].content){
+        var imgArr = res.data[0].content;
+        for (var i in imgArr){
           arr.push(i)
+          if (imgArr[i].inventory.length > 4){
+            imgArr[i].inventory = imgArr[i].inventory.slice(0,3)
+          }
         }
         that.setData({
           playerDataArr : arr,
