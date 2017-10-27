@@ -33,7 +33,7 @@
           <image src='{{item}}'></image>
         </view>
         <view class='imgNub'>
-          +199
+          +9999
         </view>
         <block wx:if="{{roomImgCheck}}">
           <view>
@@ -117,7 +117,7 @@
           <image src='{{item}}'></image>
         </view>
         <view class='imgNub'>
-          +199
+          +9999
         </view>
         <block wx:if="{{roomImgCheck}}">
           <view>
@@ -154,73 +154,75 @@
 
   <!-- 玩家ROLL  all-->
   <swiper-item>
-    <view class='room' wx:for="{{playerDataArr}}">
-      <view class='title'>
-        <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com{{roomImglist[item]['users']['face']}}"></image>
-        <view class='overfl'>{{roomImglist[item]["users"]['nick_name']}}</view>
-        <view>房间号: {{roomImglist[item]["utid"]}}</view>
+    <scroll-view scroll-y bindscrolltolower="loadNextPageData">
+      <view class='room' wx:for="{{playerDataArr}}">
+        <view class='title'>
+          <image src="https://vip-account.oss-cn-hangzhou.aliyuncs.com{{roomImglist[item]['users']['face']}}"></image>
+          <view class='overfl'>{{roomImglist[item]["users"]['nick_name']}}</view>
+          <view>房间号: {{roomImglist[item]["utid"]}}</view>
+        </view>
+        <view class='img clearFloat'>
+          <view wx:for="{{roomImglist[item]['inventory']}}">
+            <image src='https://vip-account.oss-cn-hangzhou.aliyuncs.com{{item.icon}}'></image> 
+          </view>
+          <!-- 大于4格时  -->
+          <block wx:if="{{roomImglist[item]['count_inventory'] > 4 ? true : false}}">
+            <view class='nullBg'>
+              +{{roomImglist[item]['count_inventory'] -3 }}
+            </view>
+          </block>
+          <!-- 小于等于3时 补全到4格  -->
+          <block wx:if="{{roomImglist[item]['count_inventory'] == 3 ? true : false}}">
+            <view class='nullBg'>
+              <image src="https://roll.vipgame.com/mobile/static/roll/images/rollmo.jpg"></image> 
+            </view>
+          </block>
+          <block wx:if="{{roomImglist[item]['count_inventory'] == 2 ? true : false}}">
+            <view class='nullBg'>
+              <image src="https://roll.vipgame.com/mobile/static/roll/images/rollmo.jpg"></image>
+            </view>
+            <view class='nullBg'>
+              <image src="https://roll.vipgame.com/mobile/static/roll/images/rollmo.jpg"></image>
+            </view>
+          </block>
+          <block wx:if="{{roomImglist[item]['count_inventory'] == 1 ? true : false}}">
+            <view class='nullBg'>
+              <image src="https://roll.vipgame.com/mobile/static/roll/images/rollmo.jpg"></image>
+            </view>
+            <view class='nullBg'>
+              <image src="https://roll.vipgame.com/mobile/static/roll/images/rollmo.jpg"></image>
+            </view>
+            <view class='nullBg'>
+              <image src="https://roll.steampp.com/mobile/static/roll/images/rollmo.jpg"></image>
+            </view>
+          </block>
+          
+        </view>
+        <view class='info'>
+          <view>
+            截止时间　 :　 <span>{{roomImglist[item]['endtime']}}</span>
+          </view>
+          <view>
+            活动价值　 :　 <span>${{roomImglist[item]['count_sums']}} （{{roomImglist[item]['count_inventory']}}件）</span>
+          </view>
+          <view class='bingo'>
+            <view class='get'>
+              <view class='textCt'>立即参加</view>
+              <view class='textCt'>（{{roomImglist[item]['count_join']}} / {{roomImglist[item]['max_nums']}}）</view>
+            </view>
+            中奖人数　 :　 <span>{{roomImglist[item]['results_nums']}}人</span>
+          </view>
+          <view>
+            参与等级　 :　 <span>{{roomImglist[item]['users']['level_name']}}</span>
+          </view>
+          <!-- 活动说明 (官方福利ROLL)  -->
+          <!-- <view class='note' wx:if="{{swiperPage == 0 ? true : false}}">
+            活动说明　 :　 <span>活动说明只在 官方ROLL 里面存在1111111111111111111111111111111</span>
+          </view> -->
+        </view>
       </view>
-      <view class='img clearFloat'>
-        <view wx:for="{{roomImglist[item]['inventory']}}">
-           <image src='https://vip-account.oss-cn-hangzhou.aliyuncs.com{{item.icon}}'></image> 
-        </view>
-        <!-- 大于4格时  -->
-        <block wx:if="{{roomImglist[item]['count_inventory'] > 4 ? true : false}}">
-          <view class='nullBg'>
-            +{{roomImglist[item]['count_inventory'] -3 }}
-             <image src="https://roll.vipgame.com/mobile/static/roll/images/more.jpg"></image> 
-          </view>
-        </block>
-        <!-- 小于等于3时 补全到4格  -->
-        <block wx:if="{{roomImglist[item]['count_inventory'] == 3 ? true : false}}">
-          <view class='nullBg'>
-             <image src="https://roll.vipgame.com/mobile/static/roll/images/rollmo.jpg"></image> 
-          </view>
-        </block>
-        <block wx:if="{{roomImglist[item]['count_inventory'] == 2 ? true : false}}">
-          <view class='nullBg'>
-            <image src="https://roll.vipgame.com/mobile/static/roll/images/rollmo.jpg"></image>
-          </view>
-          <view class='nullBg'>
-            <image src="https://roll.vipgame.com/mobile/static/roll/images/rollmo.jpg"></image>
-          </view>
-        </block>
-        <block wx:if="{{roomImglist[item]['count_inventory'] == 1 ? true : false}}">
-          <view class='nullBg'>
-            <image src="https://roll.vipgame.com/mobile/static/roll/images/rollmo.jpg"></image>
-          </view>
-          <view class='nullBg'>
-            <image src="https://roll.vipgame.com/mobile/static/roll/images/rollmo.jpg"></image>
-          </view>
-          <view class='nullBg'>
-            <image src="https://roll.steampp.com/mobile/static/roll/images/rollmo.jpg"></image>
-          </view>
-        </block>
-        
-      </view>
-      <view class='info'>
-        <view>
-          截止时间　 :　 <span>{{roomImglist[item]['endtime']}}</span>
-        </view>
-        <view>
-          活动价值　 :　 <span>${{roomImglist[item]['count_sums']}} （{{roomImglist[item]['count_inventory']}}件）</span>
-        </view>
-        <view class='bingo'>
-          <view class='get'>
-            <view class='textCt'>立即参加</view>
-            <view class='textCt'>（{{roomImglist[item]['count_join']}} / {{roomImglist[item]['max_nums']}}）</view>
-          </view>
-          中奖人数　 :　 <span>{{roomImglist[item]['results_nums']}}人</span>
-        </view>
-        <view>
-          参与等级　 :　 <span>{{roomImglist[item]['users']['level_name']}}</span>
-        </view>
-        <!-- 活动说明 (官方福利ROLL)  -->
-        <!-- <view class='note' wx:if="{{swiperPage == 0 ? true : false}}">
-          活动说明　 :　 <span>活动说明只在 官方ROLL 里面存在1111111111111111111111111111111</span>
-        </view> -->
-      </view>
-    </view>
+      <view class='loadMore'>loading..</view>
+    </scroll-view>
   </swiper-item>
 
   <!-- 玩家ROLL  我的创建-->

@@ -122,8 +122,12 @@ page {
 
 /* swiper 高度无法 auto  初始设置1000， 后面根据实际加载条目 动态更改height  */
 swiper {
-  height: 2000rpx;
+  height: 950rpx;
   margin-top: 186rpx;
+}
+
+scroll-view {
+  height: 850rpx;
 }
 
 swiper-item {
@@ -189,7 +193,11 @@ swiper-item:nth-of-type(1) {
 }
 
 .room .img .nullBg {
-  background-image: none;
+  background-image: url(https://roll.vipgame.com/mobile/static/roll/images/more.jpg);
+  color: #fff;
+  line-height: 98rpx;
+  text-align: center;
+  font-size: 48rpx;
 }
 
 .room .img image {
@@ -227,6 +235,16 @@ swiper-item:nth-of-type(1) {
 
 .room .info > view:nth-of-type(2) span{
   color: #e32a25;
+}
+
+.loadMore {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 26rpx;
+  color: #777; 
+  padding-left: 44%;
+  background: url(https://match.steampp.com/mobile/static/forecasts/images/loading.gif) no-repeat 40% center;
+  background-size: 30rpx;
 }
 
 .bingo {

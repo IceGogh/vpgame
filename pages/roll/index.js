@@ -14,8 +14,11 @@ Page({
         "https://roll.vipgame.com/mobile/static/roll/images/more.jpg"
       ]
     ],
+    playerRoomDataPage : 1,
     roomImglist : [],
+    loadFlag : true,
     playerDataArr : [],
+    playerDataArrVal : {},
     roomImgCheck : false,
   },
   
@@ -66,29 +69,97 @@ Page({
     })
   },
 
+
+  // **  全局  ** 数据加载中样式
+  dataGetting : function(){
+    wx.showLoading({
+      title: '数据加载中..'
+    })
+  },
+
+  // **  全局  ** 取消数据加载中(请求完成)
+  dataGettingComplate : function(){
+    setTimeout(function(){
+      wx.hideLoading()
+    }, 400)
+  },
+
+
+  // 下滑触底 加载下一页数据
+  loadNextPageData : function(e){
+    if (!this.data.loadFlag){
+      return false;
+    }
+    this.dataGetting();
+    this.setData({
+      loadFlag : false
+    })
+    
+    var that = this
+      , dataPage = this.data.playerRoomDataPage
+      , arr = this.data.playerDataArr;
+    
+    wx.request({
+      url: 'https://roll.steampp.com/m/server/getList?page=' + dataPage,
+      success: function (res) {
+        that.setData({
+          loadFlag : true
+        })
+        that.dataGettingComplate();
+        var imgArr = res.data[0].content;
+        
+        for (var i in imgArr) {
+          arr.push(i)
+          if (imgArr[i].inventory.length > 4) {
+            imgArr[i].inventory = imgArr[i].inventory.slice(0, 3)
+          }
+        }
+        that.data.playerDataArrVal = Object.assign(that.data.playerDataArrVal, res.data[0].content)
+        dataPage++;
+        that.setData({
+          playerDataArr: arr,
+          roomImglist: that.data.playerDataArrVal,
+          playerRoomDataPage: dataPage
+        });
+
+      },
+      fail: function (e) {
+        console.log(e)
+      }
+    });
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    
     var that = this
-      , arr = [];
+      , dataPage = this.data.playerRoomDataPage
+      , arr = this.data.playerDataArr;
+
     wx.request({
-      url: 'https://roll.vipgame.com/m/server/getList?page=3',
+      url: 'https://roll.steampp.com/m/server/getList?page=' + dataPage,
       success: function (res) {
+     
         var imgArr = res.data[0].content;
-        for (var i in imgArr){
+
+        for (var i in imgArr) {
           arr.push(i)
-          if (imgArr[i].inventory.length > 4){
-            imgArr[i].inventory = imgArr[i].inventory.slice(0,3)
+          if (imgArr[i].inventory.length > 4) {
+            imgArr[i].inventory = imgArr[i].inventory.slice(0, 3)
           }
         }
+        that.data.playerDataArrVal = Object.assign(that.data.playerDataArrVal, res.data[0].content)
+        dataPage++;
         that.setData({
-          playerDataArr : arr,
-          roomImglist: res.data[0].content
+          playerDataArr: arr,
+          roomImglist: that.data.playerDataArrVal,
+          playerRoomDataPage: dataPage
         });
 
-        console.log(that.data.playerDataArr)
-        console.log(that.data.roomImglist)
+      },
+      fail: function (e) {
+        console.log(e)
       }
     });
   },

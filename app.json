@@ -25,7 +25,8 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "black",
-    "navigationBarTitleText": "VipGame"
+    "navigationBarTitleText": "VipGame",
+    "enablePullDownRefresh" : false
   },
   "tabBar": {
     "color": "#888",
