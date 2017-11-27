@@ -36,7 +36,7 @@
 
 <!-- 数据兑换、存取、充值  -->
 <view class='dataTransf'>
-  <view class='silTransf textCt' bindtap='showsilTransfBox'>
+  <view class='silTransf textCt' bindtap=''>
     兑换
   </view>
   <view class='access textCt' bindtap='JumpToMyBag'>

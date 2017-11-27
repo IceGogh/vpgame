@@ -24,15 +24,15 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "black",
+    "navigationBarBackgroundColor": "#000000",
     "navigationBarTitleText": "VipGame",
     "enablePullDownRefresh" : false
   },
   "tabBar": {
     "color": "#888",
     "selectedColor": "#ee7142",
-    "backgroundColor": "#fff",
-    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "#000000",
     "list": [
       {
         "pagePath": "pages/match/index",

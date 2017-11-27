@@ -13,7 +13,7 @@
     </view>
     <view class="infoItem width94 myName" bindtap='JumpToName'>
       <text>我的昵称</text>
-      <view class='name overfl'>黑土11</view>
+      <view class='name overfl'>黑土222211</view>
     </view>
     <view class='infoItem width94 signature' bindtap='JumpToNature'>
       <text>个性签名</text>
